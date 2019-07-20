@@ -11,18 +11,17 @@ public class Main {
     public static void main(String[] args) throws IOException {
         String answer;
         Scanner sc = new Scanner(System.in);
-        System.out.println();
-        System.out.println("Welcome to program ElementaryTasks_Pavlov");
-        System.out.println("To run any task just enter its number");
-        System.out.println("Task1 - print chessboard");
-        System.out.println("Task2 - check envelopes");
-        System.out.println("Task3 - calculate triangles' square");
-        System.out.println("Task4 - find and count/replace substrings in .txt file");
-        System.out.println("Enter 11/exit to exit");
-        System.out.println("------------------------------------------------------");
+        System.out.println(
+                "Welcome to program ElementaryTasks_Pavlov" + "\n" +
+                        "To run any task just enter its number" + "\n" +
+                        "Task1 - print chessboard" + "\n" +
+                        "Task2 - check envelopes" + "\n" +
+                        "Task3 - calculate triangles' square" + "\n" +
+                        "Task4 - find and count/replace substrings in .txt file" + "\n" +
+                        "Enter 11/exit to exit");
         while (true) {
-            System.out.println();
-            System.out.println("Make your choice");
+            System.out.println("------------------------------------------------------" + "\n" +
+                    "Make your choice");
             answer = sc.nextLine().toLowerCase();
             switch (answer) {
                 case "1":
@@ -32,7 +31,7 @@ public class Main {
                         System.out.println("You've passed some arguments to this program do you want to pass " +
                                 "them into this task as well?");
                         answer = sc.nextLine();
-                        if (Validator.checkAnswer(answer)) {
+                        if (Validator.checkUserAnswer(answer)) {
                             Invoker.invokeTask1(args);
                         } else {
                             System.out.println("Then, enter any arguments to pass into this task " +
@@ -53,7 +52,7 @@ public class Main {
                         System.out.println("You've passed some arguments to this program do you " +
                                 "want to pass them into this task as well?");
                         answer = sc.nextLine();
-                        if (Validator.checkAnswer(answer)) {
+                        if (Validator.checkUserAnswer(answer)) {
                             Invoker.invokeTask2(args);
                         } else {
                             System.out.println("Then, enter any arguments to pass into this task " +
@@ -71,9 +70,10 @@ public class Main {
                 case "task3": {
                     System.out.println("You chose 3rd task");
                     if (args.length != 0) {
-                        System.out.println("You've passed some arguments to this program do you want to pass them into this task as well?");
+                        System.out.println("You've passed some arguments to this program do you want " +
+                                "to pass them into this task as well?");
                         answer = sc.nextLine();
-                        if (Validator.checkAnswer(answer)) {
+                        if (Validator.checkUserAnswer(answer)) {
                             Invoker.invokeTask3(args);
                         } else {
                             System.out.println("Then, enter any arguments to pass into this task");
@@ -89,16 +89,19 @@ public class Main {
                 case "task4": {
                     System.out.println("You chose 4th task");
                     if (args.length != 0) {
-                        System.out.println("You've passed some arguments to this program do you want to pass them into this task as well?");
+                        System.out.println("You've passed some arguments to this program do you want " +
+                                "to pass them into this task as well?");
                         answer = sc.nextLine();
-                        if (Validator.checkAnswer(answer)) {
+                        if (Validator.checkUserAnswer(answer)) {
                             Invoker.invokeTask4(args);
                         } else {
-                            System.out.println("Then, enter any arguments to pass into this task (2 or 3 argument required)");
+                            System.out.println("Then, enter any arguments to pass into this task " +
+                                    "(2 or 3 argument required)");
                             Invoker.invokeTask4(sc.nextLine().split(" "));
                         }
                     } else {
-                        System.out.println("Enter any arguments to pass into this task (only 2 or 3 argument required)");
+                        System.out.println("Enter any arguments to pass into this task " +
+                                "(only 2 or 3 argument required)");
                         Invoker.invokeTask4(sc.nextLine().split(" "));
                     }
                     break;

@@ -29,13 +29,13 @@
 
 package career.softserveinc.com.softserve.task3;
 
-public class Triangle implements Comparable<Triangle>{
+public class Triangle implements Comparable<Triangle> {
     private int a;
     private int b;
     private int c;
     private String name;
 
-    public Triangle(){ // default triangle
+    public Triangle() { // default triangle
         a = 3;
         b = 3;
         c = 3;
@@ -52,18 +52,18 @@ public class Triangle implements Comparable<Triangle>{
     public double calculateSquare() {
         double p = (double) (a + b + c);
         p /= 2;
-        return Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
 
-    public String toString(){
-        return "["+name+"]: " + calculateSquare() + " cm";
+    public String toString() {
+        return "[" + name + "]: " + calculateSquare() + " cm";
     }
 
     @Override
     public int compareTo(Triangle triangle) {
-        if(calculateSquare()<triangle.calculateSquare()) return -1;
-        if(calculateSquare()>triangle.calculateSquare()) return 1;
+        if (calculateSquare() < triangle.calculateSquare()) return -1;
+        if (calculateSquare() > triangle.calculateSquare()) return 1;
         return 0;
     }
 }

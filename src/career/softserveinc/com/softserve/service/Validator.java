@@ -32,7 +32,6 @@ package career.softserveinc.com.softserve.service;
 import career.softserveinc.com.softserve.task3.Triangle;
 import career.softserveinc.com.softserve.task4.FileManager;
 
-import java.io.File;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
@@ -88,7 +87,7 @@ public class Validator {
                         sides[i] = Integer.parseInt(argAsArray[i + 1]);
                     }
                     name = argAsArray[0];
-                    if (checkTriangle(sides)) {
+                    if (validateTriangle(sides)) {
                         triangles.add(new Triangle(name, sides[0], sides[1], sides[2]));
                     } else {
                         System.out.println("Invalid triangle");
@@ -106,40 +105,38 @@ public class Validator {
         return triangles;
     }
 
-    public static String[] validateTask4(String[] args) {
+    static String[] validateTask4(String[] args) {
         if (args.length == 2) {
-            if(FileManager.checkFilePath(args[0])){
-                FileManager fm = new FileManager(args[0]);
+            if (FileManager.checkFilePath(args[0])) {
                 return args;
             } else {
                 String path;
                 Scanner sc = new Scanner(System.in);
-                do{
+                do {
                     System.out.println("Enter valid filepath, please:");
                     path = sc.nextLine();
-                }while(!FileManager.checkFilePath(path));
+                } while (!FileManager.checkFilePath(path));
                 return Reader.read4(path);
             }
         } else if (args.length == 3) {
-            if(FileManager.checkFilePath(args[0])){
-                FileManager fm = new FileManager(args[0]);
+            if (FileManager.checkFilePath(args[0])) {
                 return args;
             } else {
                 String path;
                 Scanner sc = new Scanner(System.in);
-                do{
+                do {
                     System.out.println("Enter valid filepath, please:");
                     path = sc.nextLine();
-                }while(!FileManager.checkFilePath(path));
+                } while (!FileManager.checkFilePath(path));
                 return Reader.read4(path);
             }
         } else {
             String path;
             Scanner sc = new Scanner(System.in);
-            do{
+            do {
                 System.out.println("Enter valid filepath, please:");
                 path = sc.nextLine();
-            }while(!FileManager.checkFilePath(path));
+            } while (!FileManager.checkFilePath(path));
             return Reader.read4(path);
         }
     }
@@ -168,12 +165,12 @@ public class Validator {
 
     }
 
-    public static boolean checkAnswer(String answer) {
+    public static boolean checkUserAnswer(String answer) {
         answer = answer.toLowerCase();
         return (answer.equals("yes") || answer.equals("y"));
     }
 
-    static boolean checkTriangle(int[] s) throws IndexOutOfBoundsException {
+    static boolean validateTriangle(int[] s) throws IndexOutOfBoundsException {
         return (((s[0] + s[1] + s[2]) / 2 >= s[0]) && ((s[0] + s[1] + s[2]) / 2 >= s[1]) && ((s[0] + s[1] + s[2]) / 2 >= s[2]));
     }
 

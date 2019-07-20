@@ -115,7 +115,7 @@ class Reader {
                         }
                     }
                     name = argAsArray[0];
-                    if (Validator.checkTriangle(sides)) {
+                    if (Validator.validateTriangle(sides)) {
                         triangles.add(new Triangle(name, sides[0], sides[1], sides[2]));
                         System.out.println("Do you want to enter one more triangle?");
                     } else {
@@ -128,7 +128,7 @@ class Reader {
                     System.out.println("Invalid value");
                 }
             }
-        } while (!allFine || Validator.checkAnswer(sc.nextLine()));
+        } while (!allFine || Validator.checkUserAnswer(sc.nextLine()));
 
     }
 
@@ -151,8 +151,7 @@ class Reader {
             System.out.println("Enter string to find");
             String find = sc.nextLine();
             return new String[]{path, find};
-        }
-        if (answer.equals("2")) {
+        } else if (answer.equals("2")) {
             System.out.println("Enter string to find");
             String find = sc.nextLine();
             System.out.println("Enter new string to replace previous");

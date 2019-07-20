@@ -1,6 +1,6 @@
 package career.softserveinc.com.softserve.task1;
 
-public class ChessBoard {
+public class ChessBoard implements Drawable {
 
     private int height;
     private int width;
@@ -14,7 +14,7 @@ public class ChessBoard {
         boolean decorLine = true;
         boolean emptyField = true;
         StringBuffer sb = new StringBuffer();
-        sb.append(createDecoration(width));
+        sb.append(createDecorationForBoard());
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width * 2; j++) {
                 if (decorLine) {
@@ -38,11 +38,12 @@ public class ChessBoard {
                 emptyField = !emptyField;
             }
         }
-        sb.append(createDecoration(width));
+        sb.append(createDecorationForBoard());
         return sb;
     }
 
-    private static StringBuffer createDecoration(int width) {
+
+    public StringBuffer createDecorationForBoard() {
         StringBuffer sb = new StringBuffer();
         sb.append("+");
         for (int i = 0; i < width * 2 - 1; i++) {

@@ -34,11 +34,9 @@ import career.softserveinc.com.softserve.task2.Envelope;
 import career.softserveinc.com.softserve.task3.Triangle;
 import career.softserveinc.com.softserve.task4.FileManager;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class Invoker {
     public static void invokeTask1(String[] args) {
@@ -53,26 +51,26 @@ public class Invoker {
             int[] params = Validator.validateTask2(args);
             Envelope en1 = new Envelope(params[0], params[1]);
             Envelope en2 = new Envelope(params[2], params[3]);
-            if (en1.compareTo(en2)>1) {
+            if (en1.compareTo(en2) > 1) {
                 System.out.println("Envelope1 can be accommodated in Envelope2");
-            } else if (en1.compareTo(en2)<0) {
+            } else if (en1.compareTo(en2) < 0) {
                 System.out.println("Envelope2 can be accommodated in Envelope1");
             } else System.out.println("These two envelopes do not fit each other");
             System.out.println("Do you want to compare two envelopes again?");
-        } while (Validator.checkAnswer(sc.nextLine()));
+        } while (Validator.checkUserAnswer(sc.nextLine()));
     }
 
     public static void invokeTask3(String[] args) {
         Set<Triangle> triangles = Validator.validateTask3(args);
         System.out.println("============= Triangles list: ===============");
-        for (Triangle triangle: triangles) {
+        for (Triangle triangle : triangles) {
             System.out.println(triangle.toString());
         }
     }
 
     public static void invokeTask4(String[] args) throws IOException {
         String[] validArgs = Validator.validateTask4(args);
-        if(validArgs.length == 2){
+        if (validArgs.length == 2) {
             FileManager fm = new FileManager(validArgs[0]);
             System.out.println("Matches found: " + fm.countNumberOfSubstrings(validArgs[1]));
         } else {

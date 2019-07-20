@@ -49,16 +49,15 @@ public class Envelope implements Comparable<Envelope> {
         if (((width <= envelope.width - PAPER_THICKNESS * 2) &&
                 (height <= envelope.height - PAPER_THICKNESS * 2)) ||
                 ((width <= envelope.height - PAPER_THICKNESS * 2) &&
-                        (height <= envelope.width - PAPER_THICKNESS * 2))){
+                        (height <= envelope.width - PAPER_THICKNESS * 2))) {
             return 1;
         }
         if (((width >= envelope.width - PAPER_THICKNESS * 2) &&
                 (height >= envelope.height - PAPER_THICKNESS * 2)) ||
                 ((width >= envelope.height - PAPER_THICKNESS * 2) &&
-                        (height >= envelope.width - PAPER_THICKNESS * 2))){
+                        (height >= envelope.width - PAPER_THICKNESS * 2))) {
             return -1;
-        }
-        else return 0;
+        } else return 0;
     }
 
 }
