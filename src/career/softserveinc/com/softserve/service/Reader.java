@@ -30,6 +30,7 @@
 package career.softserveinc.com.softserve.service;
 
 import career.softserveinc.com.softserve.task3.Triangle;
+import career.softserveinc.com.softserve.task8.FibonacciManager;
 
 import java.util.Scanner;
 import java.util.Set;
@@ -140,7 +141,7 @@ class Reader {
             System.out.println("1. Count number of some strings in .txt file");
             System.out.println("2. Replace some strings with another ones in .txt file");
             answer = sc.nextLine();
-            if (!answer.equals("1") && !answer.equals("2")){
+            if (!answer.equals("1") && !answer.equals("2")) {
                 System.out.println("Enter 1 or 2");
                 continue;
             }
@@ -160,6 +161,45 @@ class Reader {
         }
 
         return new String[0];
+    }
+
+    static int[] read8() {
+        int params[] = new int[0];
+        Scanner sc = new Scanner(System.in);
+        boolean allFine;
+        do {
+            allFine = true;
+            String s = sc.nextLine();
+            String[] splintered = s.split(" ");
+            if (splintered.length == 1) {
+                try {
+                    params = new int[]{Integer.parseInt(splintered[0])};
+                    if(FibonacciManager.isNotFibonacci(params[0])){
+                        allFine = false;
+                        System.out.println("That's not a Fibonacci number");
+                    }
+                } catch (NumberFormatException e) {
+                    allFine = false;
+                    System.out.println("That is not an integer number");
+                }
+
+            } else if (splintered.length == 2) {
+                try {
+                    params = new int[]{Integer.parseInt(splintered[0]), Integer.parseInt(splintered[1])};
+                    if(FibonacciManager.isNotFibonacci(params[0]) || FibonacciManager.isNotFibonacci(params[1])){
+                        allFine = false;
+                        System.out.println("That's not a Fibonacci number");
+                    }
+                } catch (NumberFormatException e) {
+                    allFine = false;
+                    System.out.println("That is not an integer number");
+                }
+            } else {
+                allFine = false;
+                System.out.println("Invalid number of inputs");
+            }
+        } while (!allFine);
+        return params;
     }
 
 }

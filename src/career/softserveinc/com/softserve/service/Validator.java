@@ -31,6 +31,7 @@ package career.softserveinc.com.softserve.service;
 
 import career.softserveinc.com.softserve.task3.Triangle;
 import career.softserveinc.com.softserve.task4.FileManager;
+import career.softserveinc.com.softserve.task8.FibonacciManager;
 
 import java.util.Scanner;
 import java.util.Set;
@@ -153,8 +154,39 @@ public class Validator {
 
     }
 
-    public static void validateTask8() {
+    static int[] validateTask8(String[] args) {
+        int[] params;
+        if (args.length == 1) {
+            params = new int[1];
+            try {
+                params[0] = Integer.parseInt(args[0]);
+                if (!FibonacciManager.isNotFibonacci(params[0])) {
+                    System.out.println("Some arguments are not Fibonacci numbers");
+                    params = Reader.read8();
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid argument");
+                params = Reader.read8();
+            }
 
+        } else if (args.length == 2) {
+            params = new int[2];
+            try {
+                params[0] = Integer.parseInt(args[0]);
+                params[1] = Integer.parseInt(args[1]);
+                if (FibonacciManager.isNotFibonacci(params[0]) || FibonacciManager.isNotFibonacci(params[1])) {
+                    System.out.println("Some arguments are not Fibonacci numbers");
+                    params = Reader.read8();
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid arguments");
+                params = Reader.read8();
+            }
+        } else {
+            System.out.println("Invalid number of arguments");
+            params = Reader.read8();
+        }
+        return params;
     }
 
     public static void validateTask9() {

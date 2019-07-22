@@ -28,7 +28,7 @@ public class Main {
                 case "task1": {
                     System.out.println("You chose 1st task");
                     if (args.length != 0) {
-                        System.out.println("You've passed some arguments to this program do you want to pass " +
+                        System.out.println("You've passed some arguments to this program, do you want to pass " +
                                 "them into this task as well?");
                         answer = sc.nextLine();
                         if (Validator.checkUserAnswer(answer)) {
@@ -49,7 +49,7 @@ public class Main {
                 case "task2": {
                     System.out.println("You chose 2nd task");
                     if (args.length != 0) {
-                        System.out.println("You've passed some arguments to this program do you " +
+                        System.out.println("You've passed some arguments to this program, do you " +
                                 "want to pass them into this task as well?");
                         answer = sc.nextLine();
                         if (Validator.checkUserAnswer(answer)) {
@@ -70,7 +70,7 @@ public class Main {
                 case "task3": {
                     System.out.println("You chose 3rd task");
                     if (args.length != 0) {
-                        System.out.println("You've passed some arguments to this program do you want " +
+                        System.out.println("You've passed some arguments to this program, do you want " +
                                 "to pass them into this task as well?");
                         answer = sc.nextLine();
                         if (Validator.checkUserAnswer(answer)) {
@@ -89,7 +89,7 @@ public class Main {
                 case "task4": {
                     System.out.println("You chose 4th task");
                     if (args.length != 0) {
-                        System.out.println("You've passed some arguments to this program do you want " +
+                        System.out.println("You've passed some arguments to this program, do you want " +
                                 "to pass them into this task as well?");
                         answer = sc.nextLine();
                         if (Validator.checkUserAnswer(answer)) {
@@ -127,7 +127,22 @@ public class Main {
                 case "8":
                 case "task8": {
                     System.out.println("You chose 8th task");
-                    Invoker.invokeTask8(args);
+                    if (args.length != 0) {
+                        System.out.println("You've passed some arguments to this program, do you want " +
+                                "to pass them into this task as well?");
+                        answer = sc.nextLine();
+                        if (Validator.checkUserAnswer(answer)) {
+                            Invoker.invokeTask8(args);
+                        } else {
+                            System.out.println("Then, enter any arguments to pass into this task " +
+                                    "(1 or 2 arguments required)");
+                            Invoker.invokeTask8(sc.nextLine().split(" "));
+                        }
+                    } else {
+                        System.out.println("Enter any arguments to pass into this task " +
+                                "(only 1 or 2 argument required)");
+                        Invoker.invokeTask8(sc.nextLine().split(" "));
+                    }
                     break;
                 }
                 case "9":

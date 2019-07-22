@@ -33,6 +33,7 @@ import career.softserveinc.com.softserve.task1.ChessBoard;
 import career.softserveinc.com.softserve.task2.Envelope;
 import career.softserveinc.com.softserve.task3.Triangle;
 import career.softserveinc.com.softserve.task4.FileManager;
+import career.softserveinc.com.softserve.task8.FibonacciManager;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -92,7 +93,19 @@ public class Invoker {
     }
 
     public static void invokeTask8(String[] args) {
-
+        int[] params = Validator.validateTask8(args);
+        int[] subSequence;
+        FibonacciManager fm = new FibonacciManager();
+        if (params.length == 1) {
+            subSequence = fm.findSubSequence(params[0]);
+        } else {
+            subSequence = fm.findSubSequence(params[0], params[1]);
+        }
+        System.out.println("Fibonacci sequence: ");
+        for (int elem : subSequence) {
+            System.out.print(elem + " ");
+        }
+        System.out.println();
     }
 
     public static void invokeTask9(String[] args) {
