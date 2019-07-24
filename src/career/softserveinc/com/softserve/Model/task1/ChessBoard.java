@@ -1,4 +1,4 @@
-package career.softserveinc.com.softserve.task1;
+package career.softserveinc.com.softserve.Model.task1;
 
 public class ChessBoard implements Drawable {
 
@@ -10,10 +10,10 @@ public class ChessBoard implements Drawable {
         this.width = width;
     }
 
-    public StringBuffer createBoard() {
+    public StringBuilder createBoard() {
         boolean decorLine = true;
         boolean emptyField = true;
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append(createDecorationForBoard());
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width * 2; j++) {
@@ -43,8 +43,8 @@ public class ChessBoard implements Drawable {
     }
 
 
-    public StringBuffer createDecorationForBoard() {
-        StringBuffer sb = new StringBuffer();
+    public StringBuilder createDecorationForBoard() {
+        StringBuilder sb = new StringBuilder();
         sb.append("+");
         for (int i = 0; i < width * 2 - 1; i++) {
             sb.append("-");

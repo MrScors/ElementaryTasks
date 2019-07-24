@@ -27,7 +27,7 @@
  *
  */
 
-package career.softserveinc.com.softserve.task3;
+package career.softserveinc.com.softserve.Model.task3;
 
 public class Triangle implements Comparable<Triangle> {
     private int a;

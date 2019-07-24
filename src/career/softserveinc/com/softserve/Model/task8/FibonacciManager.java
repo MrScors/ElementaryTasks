@@ -27,7 +27,7 @@
  *
  */
 
-package career.softserveinc.com.softserve.task8;
+package career.softserveinc.com.softserve.Model.task8;
 
 public class FibonacciManager {
 

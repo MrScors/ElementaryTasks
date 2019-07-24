@@ -27,7 +27,7 @@
  *
  */
 
-package career.softserveinc.com.softserve.task2;
+package career.softserveinc.com.softserve.Model.task2;
 
 public class Envelope implements Comparable<Envelope> {
 
