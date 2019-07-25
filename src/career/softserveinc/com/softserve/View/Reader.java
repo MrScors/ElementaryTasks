@@ -29,28 +29,30 @@
 
 package career.softserveinc.com.softserve.View;
 
+import java.io.Console;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Reader {
 
-    public static int readWhichTaskRun(){
+    public static int readWhichTaskRun() {
         Scanner sc = new Scanner(System.in);
         int answer;
-        while(!sc.hasNextInt()){
+        while (!sc.hasNextInt()) {
             sc.next();
         }
         answer = sc.nextInt();
         return answer;
     }
 
-    public static int[] readTask1Arguments(){
+    public static int[] readTask1Arguments() {
         Scanner sc = new Scanner(System.in);
-        int[] arguments = new int[4];
-        for (int i = 0; i < 4; i++) {
-            do{
-                arguments[i] = sc.nextInt();
-            }while(sc.hasNextInt());
+        int[] arguments = new int[2];
+        for (int i = 0; i < 2; i++) {
+            while (!sc.hasNextInt()) {
+                sc.next();
+            }
+            arguments[i] = sc.nextInt();
 
         }
         return arguments;
@@ -60,7 +62,7 @@ public class Reader {
         Scanner sc = new Scanner(System.in);
         double[] arguments = new double[4];
         for (int i = 0; i < 4; i++) {
-            while(!sc.hasNextDouble()){
+            while (!sc.hasNextDouble()) {
                 sc.next();
             }
             arguments[i] = sc.nextDouble();
@@ -68,9 +70,14 @@ public class Reader {
         return arguments;
     }
 
-    public static boolean readYesOrNo(){
+    public static String readTask3Arguments() {
+        Scanner sc = new Scanner(System.in);
+        return sc.nextLine();
+    }
+
+    public static boolean readYesOrNo() {
         Scanner sc = new Scanner(System.in);
         String answer = sc.nextLine();
-        return answer.toLowerCase().equals("yes")||answer.toLowerCase().equals("y");
+        return answer.toLowerCase().equals("yes") || answer.toLowerCase().equals("y");
     }
 }

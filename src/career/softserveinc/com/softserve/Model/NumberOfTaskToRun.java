@@ -41,14 +41,8 @@ public class NumberOfTaskToRun implements Validatable {
         return number > 0 && number <= 11;
     }
 
-    @Override
     public int[] getIntArgs() {
         return new int[]{number};
-    }
-
-    @Override
-    public double[] getDoubleArgs() {
-        return new double[]{number};
     }
 
 }

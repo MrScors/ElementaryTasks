@@ -29,27 +29,41 @@
 
 package career.softserveinc.com.softserve.Controller;
 
-import career.softserveinc.com.softserve.Model.Validatable;
 import career.softserveinc.com.softserve.Model.task1.ChessBoard;
+import career.softserveinc.com.softserve.Model.task1.ITask1Arguments;
 import career.softserveinc.com.softserve.Model.task2.Envelope;
+import career.softserveinc.com.softserve.Model.task2.ITask2Arguments;
+import career.softserveinc.com.softserve.Model.task3.ITask3Arguments;
+import career.softserveinc.com.softserve.Model.task3.Triangle;
 
-public class TaskInvoker {
-    public static StringBuilder invokeTask1(Validatable arguments) {
-        int[] argsAsArray = arguments.getIntArgs();
+import java.util.Set;
+
+class TaskInvoker {
+    static StringBuilder invokeTask1(ITask1Arguments arguments) {
+        int[] argsAsArray = arguments.getArgs();
         ChessBoard chessBoard = new ChessBoard(argsAsArray[0], argsAsArray[1]);
         return new StringBuilder(chessBoard.createBoard());
     }
 
-    public static StringBuilder invokeTask2(Validatable arguments) {
-        double[] argsAsArray = arguments.getDoubleArgs();
+    static StringBuilder invokeTask2(ITask2Arguments arguments) {
+        double[] argsAsArray = arguments.getArgs();
         Envelope e1 = new Envelope(argsAsArray[0], argsAsArray[1]);
         Envelope e2 = new Envelope(argsAsArray[2], argsAsArray[3]);
         if (e1.compareTo(e2) > 0) {
             return new StringBuilder("Envelope1 can be accommodated in Envelope2");
-        } else if (e1.compareTo(e2) < 0) {
+        } else if (e2.compareTo(e1) > 0) {
             return new StringBuilder("Envelope2 can be accommodated in Envelope1");
         } else {
             return new StringBuilder("This two envelopes do not fit each other");
         }
+    }
+
+    static  StringBuilder invokeTask3(ITask3Arguments arguments){
+        Set<Triangle> triangles = arguments.getArgs();
+        StringBuilder sb = new StringBuilder("============= Triangles list: ===============\n");
+        for (Triangle t : triangles) {
+            sb.append(t.toString()+"\n");
+        }
+        return sb;
     }
 }

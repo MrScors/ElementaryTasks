@@ -29,9 +29,7 @@
 
 package career.softserveinc.com.softserve.Model.task1;
 
-import career.softserveinc.com.softserve.Model.Validatable;
-
-public class Task1Arguments implements Validatable {
+public class Task1Arguments implements ITask1Arguments{
     private int[] intArguments;
     private String[] stringArguments;
 
@@ -44,17 +42,8 @@ public class Task1Arguments implements Validatable {
     }
 
     @Override
-    public int[] getIntArgs() {
+    public int[] getArgs() {
         return intArguments;
-    }
-
-    @Override
-    public double[] getDoubleArgs() {
-        double[] doubleArguments = new double[intArguments.length];
-        for (int i = 0; i < intArguments.length; i++) {
-            doubleArguments[i] = intArguments[i];
-        }
-        return doubleArguments;
     }
 
     @Override
