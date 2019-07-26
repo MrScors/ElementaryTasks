@@ -1,4 +1,4 @@
-package career.softserveinc.com.softserve.Model;
+package career.softserveinc.com.softserve.model;
 
 public interface Validatable {
     boolean validate();

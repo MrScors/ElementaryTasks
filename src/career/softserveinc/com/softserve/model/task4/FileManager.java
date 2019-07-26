@@ -1,5 +1,5 @@
 
-package career.softserveinc.com.softserve.Model.task4;
+package career.softserveinc.com.softserve.model.task4;
 
 import java.io.*;
 import java.util.Scanner;

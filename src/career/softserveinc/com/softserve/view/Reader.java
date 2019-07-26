@@ -27,7 +27,7 @@
  *
  */
 
-package career.softserveinc.com.softserve.View;
+package career.softserveinc.com.softserve.view;
 
 import java.io.BufferedReader;
 import java.io.IOException;

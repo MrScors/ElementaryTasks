@@ -27,14 +27,14 @@
  *
  */
 
-package career.softserveinc.com.softserve.Controller;
+package career.softserveinc.com.softserve.controller;
 
-import career.softserveinc.com.softserve.Model.Validatable;
+import career.softserveinc.com.softserve.model.Validatable;
 
 public class NumberOfTaskToRun implements Validatable {
     private int number;
 
-    public NumberOfTaskToRun(int number) {
+    NumberOfTaskToRun(int number) {
         this.number = number;
     }
 
@@ -43,7 +43,7 @@ public class NumberOfTaskToRun implements Validatable {
         return number > 0 && number <= 11;
     }
 
-    public int[] getIntArgs() {
+    int[] getIntArgs() {
         return new int[]{number};
     }
 

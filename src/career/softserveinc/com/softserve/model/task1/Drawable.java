@@ -1,4 +1,4 @@
-package career.softserveinc.com.softserve.Model.task1;
+package career.softserveinc.com.softserve.model.task1;
 
 public interface Drawable {
     StringBuilder createBoard();

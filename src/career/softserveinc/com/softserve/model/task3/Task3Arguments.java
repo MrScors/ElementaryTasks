@@ -27,7 +27,7 @@
  *
  */
 
-package career.softserveinc.com.softserve.Model.task3;
+package career.softserveinc.com.softserve.model.task3;
 
 import java.util.Set;
 import java.util.TreeSet;

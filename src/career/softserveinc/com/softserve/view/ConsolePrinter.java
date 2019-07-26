@@ -27,9 +27,9 @@
  *
  */
 
-package career.softserveinc.com.softserve.View;
+package career.softserveinc.com.softserve.view;
 
-public class Writer {
+public class ConsolePrinter {
 
 
     public static void writeResultsOfTask(StringBuilder sb) {
@@ -61,6 +61,11 @@ public class Writer {
         System.out.println("Please, enter arguments to use in task2 (must be 4 integer numbers that > 0)" +
                 "\nEverything except doubles will be ignored");
     }
+
+    public static void askWhetherDoOnceMore() {
+        System.out.println("Do you want to run this task once more?");
+    }
+
     // task3
 
     public static void tellYouAboutTask3() {
@@ -104,9 +109,4 @@ public class Writer {
         System.out.println("(must be integer that < 12 and > 0" +
                 "\nEverything except integers will be ignored");
     }
-
-    public static void askWhetherDoOnceMore() {
-        System.out.println("Do you want to run this task once more?");
-    }
-
 }

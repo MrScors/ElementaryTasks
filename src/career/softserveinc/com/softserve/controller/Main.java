@@ -1,11 +1,11 @@
-package career.softserveinc.com.softserve.Controller;
+package career.softserveinc.com.softserve.controller;
 
-import career.softserveinc.com.softserve.Model.RunnableTasks;
-import career.softserveinc.com.softserve.Model.task1.Task1Runner;
-import career.softserveinc.com.softserve.Model.task2.Task2Runner;
-import career.softserveinc.com.softserve.Model.task3.Task3Runner;
-import career.softserveinc.com.softserve.View.Reader;
-import career.softserveinc.com.softserve.View.Writer;
+import career.softserveinc.com.softserve.model.RunnableTasks;
+import career.softserveinc.com.softserve.model.task1.Task1Runner;
+import career.softserveinc.com.softserve.model.task2.Task2Runner;
+import career.softserveinc.com.softserve.model.task3.Task3Runner;
+import career.softserveinc.com.softserve.view.Reader;
+import career.softserveinc.com.softserve.view.ConsolePrinter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,14 +19,14 @@ public class Main {
         RunnableTasks rt;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        Writer.writeGreetings();
-        Writer.seperateNewTask();
+        ConsolePrinter.writeGreetings();
 
         do{
+            ConsolePrinter.seperateNewTask();
             try {
                 numberOfTaskToRun = new NumberOfTaskToRun(Reader.readWhichTaskRun(br));
                 if(numberOfTaskToRun.validate()) break;
-                else Writer.writeInvalidArgsErrorMessage();
+                else ConsolePrinter.writeInvalidArgsErrorMessage();
             } catch (IOException | NumberFormatException e) {
                 System.err.println(e.getMessage());
             }
@@ -35,18 +35,30 @@ public class Main {
         switch (numberOfTaskToRun.getIntArgs()[0]) {
             case 1: {
                 rt = new Task1Runner(args);
-                rt.run(br);
+                try {
+                    rt.run(br);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 break;
             }
             case 2: {
                 rt = new Task2Runner(args);
-                rt.run(br);
+                try {
+                    rt.run(br);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 break;
             }
 
             case 3: {
                 rt = new Task3Runner(args);
-                rt.run(br);
+                try {
+                    rt.run(br);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 break;
             }
 
