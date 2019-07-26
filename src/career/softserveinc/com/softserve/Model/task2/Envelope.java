@@ -35,12 +35,12 @@ public class Envelope implements Comparable<Envelope> {
     private double width;
     private double height;
 
-    public Envelope() { // default European envelope
+    Envelope() { // default European envelope
         width = 1.1;
         height = 2.2;
     }
 
-    public Envelope(double width, double height) {
+    Envelope(double width, double height) {
         this.width = width;
         this.height = height;
     }

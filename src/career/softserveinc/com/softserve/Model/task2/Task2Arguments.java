@@ -33,11 +33,11 @@ public class Task2Arguments implements ITask2Arguments {
     private double[] doubleArguments;
     private String[] stringArguments;
 
-    public Task2Arguments(double[] doubleArguments) {
+    Task2Arguments(double[] doubleArguments) {
         this.doubleArguments = doubleArguments;
     }
 
-    public Task2Arguments(String[] stringArguments) {
+    Task2Arguments(String[] stringArguments) {
         this.stringArguments = stringArguments;
     }
 

@@ -4,6 +4,8 @@ import career.softserveinc.com.softserve.Model.RunnableTasks;
 import career.softserveinc.com.softserve.View.Reader;
 import career.softserveinc.com.softserve.View.Writer;
 
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.Set;
 
 public class Task3Runner implements RunnableTasks {
@@ -14,22 +16,51 @@ public class Task3Runner implements RunnableTasks {
     }
 
     @Override
-    public void run() {
+    public void run(BufferedReader br) {
         Task3Arguments validArguments = new Task3Arguments();
         Writer.tellYouAboutTask3();
         Writer.askWhetherPassReceivedArguments();
-        if (Reader.readYesOrNo()){
+        boolean yesOrNo;
+
+        do {
+            try {
+                yesOrNo = Reader.readYesOrNo(br);
+                break;
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        } while (true);
+
+        if (yesOrNo){
             if(!validArguments.add(args)){
                 Writer.writeInvalidArgsErrorMessage();
             }
         }
         Writer.askToWriteSomeArgumentsForTask3();
         do {
-            if(!validArguments.add(Reader.readTask3Arguments())){
-                Writer.writeInvalidArgsErrorMessage();
-            }
+            do{
+                try {
+                    if(!validArguments.add(Reader.readTask3Arguments(br))){
+                        Writer.writeInvalidArgsErrorMessage();
+                    }
+                    break;
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            }while(true);
+
             Writer.askWhetherAddMoreTriangles();
-        } while (Reader.readYesOrNo());
+
+            do {
+                try {
+                    yesOrNo = Reader.readYesOrNo(br);
+                    break;
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } while (true);
+
+        } while (yesOrNo);
         Writer.writeResultsOfTask(invokeTask3(validArguments));
     }
 

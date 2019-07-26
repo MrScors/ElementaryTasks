@@ -2,42 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="702ad37f-65cb-4aeb-8459-8d3e5a6e3e15" name="Default Changelist" comment="ver-4.1 (Invoker -&gt; Runnable)">
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/NumberOfTaskToRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/RunnableTasks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/Validatable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Drawable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/ITask1Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/ITask2Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/ITask3Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Reader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Writer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/service/Invoker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/service/Reader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/service/Validator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/task1/ChessBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/task1/Drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/task2/Envelope.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/task3/Triangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/task4/FileManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/service/Invoker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/service/Reader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/service/Validator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/task1/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/ChessBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/task1/Drawable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/task2/Envelope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Envelope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/task3/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/task4/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task4/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/task8/FibonacciManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task8/FibonacciManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/META-INF/ElementaryTasks_Pavlov.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/RunnableTasks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/RunnableTasks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Task1Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Task1Arguments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Task1Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Task1Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/Task2Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/Task2Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/Task3Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/Task3Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/View/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/View/Reader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/NumberOfTaskToRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/NumberOfTaskToRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/RunnableTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/RunnableTasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Reader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="8">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,10 +45,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Runner.java">
+        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/NumberOfTaskToRun.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+              <folding>
+                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#1228#1229#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Runner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/RunnableTasks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -93,20 +87,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Arguments.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            <state relative-caret-position="586">
+              <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Runner.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/ITask2Arguments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="68">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,7 +123,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Writer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
+            <state relative-caret-position="537">
               <caret line="92" column="38" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="38" />
             </state>
           </provider>
@@ -126,29 +132,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="561">
+              <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Arguments.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Triangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -201,28 +189,29 @@
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/NumberOfTaskToRun.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/ITask1Arguments.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Envelope.java" />
-        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Reader.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/ITask1Arguments.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/ITask2Arguments.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Arguments.java" />
-        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Arguments.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/ITask3Arguments.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Arguments.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Triangle.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/TaskInvoker.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Writer.java" />
-        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/Main.java" />
-        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Runner.java" />
+        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Arguments.java" />
+        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Reader.java" />
+        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/RunnableTasks.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Runner.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Runner.java" />
+        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/Main.java" />
+        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Runner.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1615" />
-    <option name="height" value="880" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="230" />
+    <option name="y" value="54" />
+    <option name="width" value="1612" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -230,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -291,6 +279,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,10 +370,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957806" visible="true" weight="0.17248322" />
-      <window_info id="Structure" order="1" sideWeight="0.5042194" side_tool="true" visible="true" weight="0.17248322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49404117" visible="true" weight="0.14658849" />
+      <window_info id="Structure" order="1" sideWeight="0.50595886" side_tool="true" visible="true" weight="0.14658849" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -393,7 +383,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,17 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/NumberOfTaskToRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task4/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -501,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/ITask2Arguments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/ITask3Arguments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -515,82 +487,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="66" column="13" lean-forward="true" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/TaskInvoker.java" />
-    <entry file="jar://$PROJECT_DIR$/../../../Softik/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/RunnableTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Arguments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Arguments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="92" column="38" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Softik/jdk1.8.0_201/src.zip!/java/util/ArrayList.java" />
     <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Arguments.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -605,10 +503,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Arguments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/ITask2Arguments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="92" column="38" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/RunnableTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/NumberOfTaskToRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Arguments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="586">
+          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

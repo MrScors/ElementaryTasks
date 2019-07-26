@@ -33,11 +33,11 @@ public class Task1Arguments implements ITask1Arguments{
     private int[] intArguments;
     private String[] stringArguments;
 
-    public Task1Arguments(int[] intArguments) {
+    Task1Arguments(int[] intArguments) {
         this.intArguments = intArguments;
     }
 
-    public Task1Arguments(String[] stringArguments) {
+    Task1Arguments(String[] stringArguments) {
         this.stringArguments = stringArguments;
     }
 

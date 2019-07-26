@@ -4,27 +4,47 @@ import career.softserveinc.com.softserve.Model.RunnableTasks;
 import career.softserveinc.com.softserve.View.Reader;
 import career.softserveinc.com.softserve.View.Writer;
 
-public class Task1Runner implements RunnableTasks {
-    String[] args;
+import java.io.BufferedReader;
+import java.io.IOException;
 
-    public Task1Runner(String[] args){
+public class Task1Runner implements RunnableTasks {
+    private String[] args;
+
+    public Task1Runner(String[] args) {
         this.args = args;
     }
 
     @Override
-    public void run() {
+    public void run(BufferedReader br) {
 
-        int[] consoleArguments;
+        int[] consoleArguments = null;
+        boolean yesOrNo;
         Task1Arguments validArguments;
         Writer.tellYouAboutTask1();
         Writer.askWhetherPassReceivedArguments();
-        if (Reader.readYesOrNo() && new Task1Arguments(args).validate()) {
+        do {
+            try {
+                yesOrNo = Reader.readYesOrNo(br);
+                break;
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        } while (true);
+
+        if (yesOrNo && new Task1Arguments(args).validate()) {
             validArguments = new Task1Arguments(args);
             Writer.writeResultsOfTask(invokeTask1(validArguments));
         } else {
             do {
                 Writer.askToWriteSomeArgumentsForTask1();
-                consoleArguments = Reader.readTask1Arguments();
+                do {
+                    try {
+                        consoleArguments = Reader.readTask1Arguments(br);
+                    } catch (NumberFormatException | IOException e) {
+                        System.out.println(e.getMessage());
+                    }
+                } while (consoleArguments == null);
+
                 validArguments = new Task1Arguments(consoleArguments);
             } while (!validArguments.validate());
             Writer.writeResultsOfTask(invokeTask1(validArguments));

@@ -29,55 +29,40 @@
 
 package career.softserveinc.com.softserve.View;
 
-import java.io.Console;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.InputMismatchException;
-import java.util.Scanner;
 
 public class Reader {
 
-    public static int readWhichTaskRun() {
-        Scanner sc = new Scanner(System.in);
+    public static int readWhichTaskRun(BufferedReader br) throws NumberFormatException, IOException {
         int answer;
-        while (!sc.hasNextInt()) {
-            sc.next();
-        }
-        answer = sc.nextInt();
+        answer = Integer.parseInt(br.readLine());
         return answer;
     }
 
-    public static int[] readTask1Arguments() {
-        Scanner sc = new Scanner(System.in);
+    public static int[] readTask1Arguments(BufferedReader br) throws NumberFormatException, IOException {
         int[] arguments = new int[2];
         for (int i = 0; i < 2; i++) {
-            while (!sc.hasNextInt()) {
-                sc.next();
-            }
-            arguments[i] = sc.nextInt();
-
+            arguments[i] = Integer.parseInt(br.readLine());
         }
         return arguments;
     }
 
-    public static double[] readTask2Arguments() throws InputMismatchException {
-        Scanner sc = new Scanner(System.in);
+    public static double[] readTask2Arguments(BufferedReader br) throws InputMismatchException, NumberFormatException, IOException {
         double[] arguments = new double[4];
         for (int i = 0; i < 4; i++) {
-            while (!sc.hasNextDouble()) {
-                sc.next();
-            }
-            arguments[i] = sc.nextDouble();
+            arguments[i] = Double.parseDouble(br.readLine());
         }
         return arguments;
     }
 
-    public static String readTask3Arguments() {
-        Scanner sc = new Scanner(System.in);
-        return sc.nextLine();
+    public static String readTask3Arguments(BufferedReader br) throws IOException {
+        return br.readLine();
     }
 
-    public static boolean readYesOrNo() {
-        Scanner sc = new Scanner(System.in);
-        String answer = sc.nextLine();
+    public static boolean readYesOrNo(BufferedReader br) throws IOException {
+        String answer = br.readLine();
         return answer.toLowerCase().equals("yes") || answer.toLowerCase().equals("y");
     }
 }

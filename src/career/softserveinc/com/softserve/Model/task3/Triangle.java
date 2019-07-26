@@ -42,14 +42,14 @@ public class Triangle implements Comparable<Triangle> {
         name = "Default";
     }
 
-    public Triangle(String name, int a, int b, int c) {
+    Triangle(String name, int a, int b, int c) {
         this.a = a;
         this.b = b;
         this.c = c;
         this.name = name;
     }
 
-    public double calculateSquare() {
+    private double calculateSquare() {
         double p = (double) (a + b + c);
         p /= 2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
@@ -62,8 +62,6 @@ public class Triangle implements Comparable<Triangle> {
 
     @Override
     public int compareTo(Triangle triangle) {
-        if (calculateSquare() < triangle.calculateSquare()) return -1;
-        if (calculateSquare() > triangle.calculateSquare()) return 1;
-        return 0;
+        return Double.compare(calculateSquare(), triangle.calculateSquare());
     }
 }

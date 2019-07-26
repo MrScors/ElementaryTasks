@@ -27,7 +27,9 @@
  *
  */
 
-package career.softserveinc.com.softserve.Model;
+package career.softserveinc.com.softserve.Controller;
+
+import career.softserveinc.com.softserve.Model.Validatable;
 
 public class NumberOfTaskToRun implements Validatable {
     private int number;

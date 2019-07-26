@@ -4,30 +4,58 @@ import career.softserveinc.com.softserve.Model.RunnableTasks;
 import career.softserveinc.com.softserve.View.Reader;
 import career.softserveinc.com.softserve.View.Writer;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+
 public class Task2Runner implements RunnableTasks {
 
     private String[] args;
-    public Task2Runner(String[] args){
+
+    public Task2Runner(String[] args) {
         this.args = args;
     }
 
     @Override
-    public void run() {
+    public void run(BufferedReader br) {
         double[] consoleArguments;
         Task2Arguments validArguments;
         Writer.tellYouAboutTask2();
         Writer.askWhetherPassReceivedArguments();
-        boolean yesOrNo = Reader.readYesOrNo();
+        boolean yesOrNo;
+
+        do {
+            try {
+                yesOrNo = Reader.readYesOrNo(br);
+                break;
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        } while (true);
+
         if (yesOrNo && new Task2Arguments(args).validate()) {
             validArguments = new Task2Arguments(args);
             boolean doAgain;
             do {
                 Writer.writeResultsOfTask(invokeTask2(validArguments));
-                doAgain = Reader.readYesOrNo();
+                do {
+                    try {
+                        doAgain = Reader.readYesOrNo(br);
+                        break;
+                    } catch (IOException e) {
+                        System.out.println(e.getMessage());
+                    }
+                } while (true);
                 if (doAgain) {
                     do {
                         Writer.askToWriteSomeArgumentsForTask2();
-                        consoleArguments = Reader.readTask2Arguments();
+                        do {
+                            try {
+                                consoleArguments = Reader.readTask2Arguments(br);
+                                break;
+                            } catch (NumberFormatException | IOException e) {
+                                System.out.println(e.getMessage());
+                            }
+                        } while (true);
                         validArguments = new Task2Arguments(consoleArguments);
                     } while (!validArguments.validate());
                 } else {
@@ -42,7 +70,14 @@ public class Task2Runner implements RunnableTasks {
             do {
                 do {
                     Writer.askToWriteSomeArgumentsForTask2();
-                    consoleArguments = Reader.readTask2Arguments();
+                    do {
+                        try {
+                            consoleArguments = Reader.readTask2Arguments(br);
+                            break;
+                        } catch (NumberFormatException | IOException e) {
+                            System.out.println(e.getMessage());
+                        }
+                    } while (true);
                     validArguments = new Task2Arguments(consoleArguments);
                     if (!validArguments.validate()) {
                         Writer.writeInvalidArgsErrorMessage();
@@ -50,7 +85,14 @@ public class Task2Runner implements RunnableTasks {
                 } while (true);
                 Writer.writeResultsOfTask(invokeTask2(validArguments));
                 Writer.askWhetherDoOnceMore();
-                doAgain = Reader.readYesOrNo();
+                do {
+                    try {
+                        doAgain = Reader.readYesOrNo(br);
+                        break;
+                    } catch (IOException e) {
+                        System.out.println(e.getMessage());
+                    }
+                } while (true);
             } while (doAgain);
 
         }

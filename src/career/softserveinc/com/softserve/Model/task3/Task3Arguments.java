@@ -35,19 +35,19 @@ import java.util.TreeSet;
 public class Task3Arguments implements ITask3Arguments {
     private Set<Triangle> triangles = new TreeSet<>();
 
-    public Task3Arguments() {
+    Task3Arguments() {
 
     }
 
-    public Task3Arguments(String[] stringArguments) {
+    Task3Arguments(String[] stringArguments) {
         validate(stringArguments);
     }
 
-    public boolean add(String stringArgument) {
+    boolean add(String stringArgument) {
         return validateSingleString(stringArgument);
     }
 
-    public boolean add(String[] stringArguments) {
+    boolean add(String[] stringArguments) {
         return validate(stringArguments);
     }
 
@@ -59,8 +59,8 @@ public class Task3Arguments implements ITask3Arguments {
     @Override
     public boolean validate(String[] stringArguments) {
         boolean allTrianglesValid = true;
-        for (int i = 0; i < stringArguments.length; i++) {
-            allTrianglesValid = validateSingleString(stringArguments[i]);
+        for (String stringArgument : stringArguments) {
+            allTrianglesValid = validateSingleString(stringArgument);
         }
         return allTrianglesValid;
     }
