@@ -53,7 +53,7 @@ public class Task8Runner implements RunnableTasks {
     private static Task8Arguments readValidConsoleArguments(BufferedReader br) {
         Task8Arguments validArguments;
         do {
-            ConsolePrinter.askToWriteSomeArgumentsForTask6();
+            ConsolePrinter.askToWriteSomeArgumentsForTask8();
             validArguments = new Task8Arguments(readConsoleArguments(br));
             if (!validArguments.validate(br)) {
                 ConsolePrinter.writeInvalidArgsErrorMessage();

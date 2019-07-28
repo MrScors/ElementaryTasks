@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="702ad37f-65cb-4aeb-8459-8d3e5a6e3e15" name="Default Changelist" comment="ver-4.3 (Task4 and 8 are working now)">
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/ITask4Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/Task4Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/Task4Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/ITask6Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/ITask8Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java" afterDir="false" />
+    <list default="true" id="702ad37f-65cb-4aeb-8459-8d3e5a6e3e15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/NumberOfTaskToRun.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/RunnableTasks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/RunnableTasks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/Validatable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/Validatable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/ChessBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/ChessBoard.class" afterDir="false" />
@@ -35,12 +22,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task4/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task4/FileManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task8/FibonacciManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task8/FibonacciManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/View/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/View/Reader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/View/Writer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/FibonacciManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/FibonacciManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/ConsolePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,20 +75,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="55" column="61" lean-forward="true" selection-start-line="55" selection-start-column="61" selection-end-line="55" selection-end-column="61" />
+            <state relative-caret-position="331">
+              <caret line="54" column="12" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/ConsolePrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="561">
+              <caret line="108" column="54" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -237,11 +219,11 @@
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Arguments.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/Reader.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/controller/Main.java" />
-        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Runner.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketCounter.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketValidator.java" />
         <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/ConsolePrinter.java" />
+        <option value="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java" />
       </list>
     </option>
   </component>
@@ -296,7 +278,8 @@
               <item name="ElementaryTasks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="softserve" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="task8" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -389,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563974280908</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ver-4.3 (tasks 8 and 4 were connected, task 6 was added and connected)">
+      <created>1564344216300</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564344216300</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -459,7 +449,8 @@
     <MESSAGE value="ver-4.1 (Invoker -&gt; Runnable)" />
     <MESSAGE value="ver-4.2 (decreased number of do{}while() usage)" />
     <MESSAGE value="ver-4.3 (Task4 and 8 are working now)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ver-4.3 (Task4 and 8 are working now)" />
+    <MESSAGE value="ver-4.3 (tasks 8 and 4 were connected, task 6 was added and connected)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver-4.3 (tasks 8 and 4 were connected, task 6 was added and connected)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -751,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="55" column="61" lean-forward="true" selection-start-line="55" selection-start-column="61" selection-end-line="55" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -796,8 +780,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/ConsolePrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="561">
+          <caret line="108" column="54" selection-start-line="108" selection-start-column="53" selection-end-line="108" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="54" column="12" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
         </state>
       </provider>
     </entry>
