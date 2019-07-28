@@ -49,7 +49,7 @@ public class Reader {
         return arguments;
     }
 
-    public static double[] readTask2Arguments(BufferedReader br) throws InputMismatchException, NumberFormatException, IOException {
+    public static double[] readTask2Arguments(BufferedReader br) throws NumberFormatException, IOException {
         double[] arguments = new double[4];
         for (int i = 0; i < 4; i++) {
             arguments[i] = Double.parseDouble(br.readLine());
@@ -59,6 +59,24 @@ public class Reader {
 
     public static String readTask3Arguments(BufferedReader br) throws IOException {
         return br.readLine();
+    }
+
+    public static String readTask4Arguments(BufferedReader br) throws IOException {
+        return br.readLine();
+    }
+
+    public static String readTask6Arguments(BufferedReader br) throws IOException {
+        return br.readLine();
+    }
+
+    public static long[] readTask8Arguments(BufferedReader br) throws NumberFormatException, IOException {
+        String arguments = br.readLine();
+        String[] argumentsAsArray = arguments.split(" ");
+        long[] argumentsAsLongArray = new long[argumentsAsArray.length];
+        for (int i = 0; i < argumentsAsArray.length; i++) {
+            argumentsAsLongArray[i] = Long.parseLong(argumentsAsArray[i]);
+        }
+        return argumentsAsLongArray;
     }
 
     public static boolean readYesOrNo(BufferedReader br) throws IOException {
