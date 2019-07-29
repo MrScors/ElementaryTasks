@@ -36,11 +36,11 @@ public class ConsolePrinter {
         System.out.println(sb);
     }
 
-    public static void writeInvalidArgsErrorMessage(){
-        System.out.println("Some arguments are invalid");
+    public static void writeInvalidArgsErrorMessage() {
+        System.out.println("Some arguments are invalid enter all arguments again please");
     }
 
-    // task1
+    // task_1
 
     public static void tellYouAboutTask1() {
         System.out.println("You've chose task1");
@@ -51,14 +51,14 @@ public class ConsolePrinter {
                 "\nEverything except integers will be ignored");
     }
 
-    // task2
+    // task_2
 
     public static void tellYouAboutTask2() {
         System.out.println("You've chose task2");
     }
 
     public static void askToWriteSomeArgumentsForTask2() {
-        System.out.println("Please, enter arguments to use in task2 (must be 4 integer numbers that > 0)" +
+        System.out.println("Please, enter arguments to use in task2 (must be 4 double numbers that > 0)" +
                 "\nEverything except doubles will be ignored");
     }
 
@@ -66,21 +66,67 @@ public class ConsolePrinter {
         System.out.println("Do you want to run this task once more?");
     }
 
-    // task3
+    // task_3
 
     public static void tellYouAboutTask3() {
         System.out.println("You've chose task3");
     }
 
     public static void askToWriteSomeArgumentsForTask3() {
-        System.out.println("Please, enter arguments to use in task2\n" +
+        System.out.println("Please, enter arguments to use in task3\n" +
                 "(must be 1 string in format <String>,<int>,<int>,<int>)");
+    }
+
+    // task_4
+
+    public static void tellYouAboutTask4() {
+        System.out.println("You've chose task4");
+    }
+
+    public static void askToWriteSomeArgumentsForTask4() {
+        System.out.println("Please, enter arguments to use in task4\n" +
+                "(must be 1 string in format \"<filepath> <stringToFind>\"\n" +
+                "or \"<filepath> <stringToFind> <newStringToReplacePreviousOne>\" <>)");
+    }
+
+    // task_6
+
+    public static void tellYouAboutTask6() {
+        System.out.println("You've chose task6");
+    }
+
+    public static void askToWriteSomeArgumentsForTask6() {
+        System.out.println("Please, enter arguments to use in task2\n" +
+                "(must be 1 string in format <validFilepath>)");
+    }
+
+    // task_7
+
+    public static void tellYouAboutTask7() {
+        System.out.println("You've chose task7");
+    }
+
+    public static void askToWriteSomeArgumentsForTask7() {
+        System.out.println("Please, enter arguments to use in task7\n" +
+                "(must be 1 integer numbers that > 0)" +
+                "\nEverything except integers will be ignored");
+    }
+
+    // task_8
+
+    public static void tellYouAboutTask8() {
+        System.out.println("You've chose task8");
+    }
+
+    public static void askToWriteSomeArgumentsForTask8() {
+        System.out.println("Please, enter arguments to use in task8\n" +
+                "(must be 1 string in format <borderValue1> <borderValue2> or <lengthValue>)" + "\n" +
+                "borderValue -> long type; lengthValue < 92;");
     }
 
     public static void askWhetherAddMoreTriangles() {
         System.out.println("Do you want to add more triangles?");
     }
-
 
     // main
 
@@ -92,10 +138,13 @@ public class ConsolePrinter {
                         "Task2 - check envelopes" + "\n" +
                         "Task3 - calculate triangles' square" + "\n" +
                         "Task4 - find and count/replace substrings in .txt file" + "\n" +
+                        "Task6 - find, count and show all lucky tickets in .txt file" + "\n" +
+                        "Task7 - create sequence of natural numbers which square is lower than given number" + "\n" +
+                        "Task8 - get subSequence of Fibonacci Numbers of given length or with given borders" + "\n" +
                         "Enter 11/exit to exit");
     }
 
-    public static void seperateNewTask(){
+    public static void separateNewTask() {
         System.out.println("---------------------------------------------------------" +
                 "\nMake your choice");
     }
@@ -105,8 +154,7 @@ public class ConsolePrinter {
     }
 
     public static void writeErrorOfEnteringNumberOfTaskToRun() {
-        System.out.println("Invalid number of task to run, try again please");
-        System.out.println("(must be integer that < 12 and > 0" +
-                "\nEverything except integers will be ignored");
+        System.out.println("Invalid number of task to run, try again please" + "\n" +
+                "(must be integer that > 0 and < 12");
     }
 }

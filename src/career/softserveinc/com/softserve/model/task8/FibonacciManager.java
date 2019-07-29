@@ -29,78 +29,63 @@
 
 package career.softserveinc.com.softserve.model.task8;
 
-public class FibonacciManager {
+class FibonacciManager {
 
-    private int findLengthOfSubSequence(int start, int end) {
+    static private int findLengthOfSubSequence(long start, long end) {
         int length = 0;
-        int i = 1;
-        int prevI = 0;
+        long i = 1;
+        long prevI = 0;
         while (i < end) {
             if (i >= start) {
                 length++;
             }
-            int temp = i;
+            long temp = i;
             i += prevI;
             prevI = temp;
         }
-        length++;
         return length;
     }
 
-    public int[] findSubSequence(int start, int end) {
+    static long[] findSubSequence(long start, long end) {
 
         if (start > end) { // swap instead of incorrect work
-            System.out.println("Elements were swapped because start point was lower then end one");
-            int temp = start;
+            long temp = start;
             start = end;
             end = temp;
         }
 
         int length = findLengthOfSubSequence(start, end);
-        int[] subsequence = new int[length];
-        int subsequenceCounter = 0;
-        int i = 1;
-        int prevI = 0;
+        long[] subSequence = new long[length];
+        int subSequenceCounter = 0;
+        long i = 1;
+        long prevI = 0;
         while (i < end) {
             if (i >= start) {
-                subsequence[subsequenceCounter++] = i;
+                subSequence[subSequenceCounter++] = i;
             }
-            int temp = i;
+            long temp = i;
             i += prevI;
             prevI = temp;
         }
-        subsequence[subsequenceCounter] = i;
-        return subsequence;
+        return subSequence;
     }
 
-    public int[] findSubSequence(int length) {
-        int[] subsequence = new int[length];
-        int subsequenceCounter = 0;
-        int prevElement = 0;
-        int element = 1;
-        subsequence[subsequenceCounter++] = prevElement;
+    static long[] findSubSequence(long length) {
+        long[] subSequence = new long[(int) length];
+        int subSequenceCounter = 0;
+        long prevElement = 0;
+        long element = 1;
+        subSequence[subSequenceCounter++] = prevElement;
         for (int i = 1; i < length - 1; i++) {
-            int temp = element;
+            long temp = element;
             element += prevElement;
             prevElement = temp;
-            subsequence[subsequenceCounter++] = prevElement;
+            subSequence[subSequenceCounter++] = prevElement;
         }
-        subsequence[subsequenceCounter] = element;
-        return subsequence;
+        subSequence[subSequenceCounter] = element;
+        return subSequence;
     }
 
-    public static boolean isNotFibonacci(int elem) {
-        int i = 1;
-        int prevI = 0;
-        while (i < 1836311903) {
-            if (elem == i) {
-                return false;
-            }
-            int temp = i;
-            i += prevI;
-            prevI = temp;
-        }
-        return elem != i;
-    }
+
 
 }

@@ -24,7 +24,7 @@ public class Task2Runner implements RunnableTasks {
         if (useArgs && new Task2Arguments(args).validate()) {
             validArguments = new Task2Arguments(args);
         } else {
-            if(useArgs) ConsolePrinter.writeInvalidArgsErrorMessage();
+            if (useArgs) ConsolePrinter.writeInvalidArgsErrorMessage();
             validArguments = readValidConsoleArguments(br);
         }
 
@@ -56,8 +56,8 @@ public class Task2Runner implements RunnableTasks {
             try {
                 consoleArguments = Reader.readTask2Arguments(br);
                 break;
-            } catch (NumberFormatException | IOException e) {
-                System.out.println(e.getMessage());
+            } catch (NumberFormatException | IOException e){
+                ConsolePrinter.writeInvalidArgsErrorMessage();
             }
         } while (true);
         return consoleArguments;

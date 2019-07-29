@@ -9,11 +9,23 @@ public class FileManager {
 
     private String filePath;
 
-    public FileManager(String filePath) {
+    FileManager(String filePath) {
         this.filePath = filePath;
     }
 
-    public int countNumberOfSubstrings(String wanted) throws FileNotFoundException {
+    StringBuilder readFile() throws IOException {
+        StringBuilder sb = new StringBuilder();
+        BufferedReader file = new BufferedReader(new FileReader(filePath));
+        String line;
+
+        while ((line = file.readLine()) != null) {
+            sb.append(line);
+            sb.append('\n');
+        }
+        return sb;
+    }
+
+    int countNumberOfSubstrings(String wanted) throws FileNotFoundException {
         int result = 0;
         File file = new File(filePath);
         Scanner sc = new Scanner(file);
@@ -25,7 +37,7 @@ public class FileManager {
         return result / wanted.length();
     }
 
-    public void changeSubstringsToAnother(String oldOne, String newOne) throws IOException {
+    void changeSubstringsToAnother(String oldOne, String newOne) throws IOException {
         // input the (modified) file content to the StringBuffer "input"
         BufferedReader file = new BufferedReader(new FileReader(filePath));
         StringBuilder inputBuffer = new StringBuilder();
