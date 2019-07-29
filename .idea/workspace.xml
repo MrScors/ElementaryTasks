@@ -1,29 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="702ad37f-65cb-4aeb-8459-8d3e5a6e3e15" name="Default Changelist" comment="ver-4.2 (decreased number of do{}while() usage)">
+    <list default="true" id="702ad37f-65cb-4aeb-8459-8d3e5a6e3e15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Controller/NumberOfTaskToRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/controller/NumberOfTaskToRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/RunnableTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/RunnableTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/Validatable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/Validatable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task1/ChessBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task1/Drawable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/ITask1Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task1/ITask1Arguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task1/Task1Arguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task1/Task1Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task1/Task1Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Envelope.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task2/Envelope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/ITask2Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task2/ITask2Arguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task2/Task2Arguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task2/Task2Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task2/Task2Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/ITask3Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task3/ITask3Arguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task3/Task3Arguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Task3Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task3/Task3Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task3/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task3/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task4/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/Model/task8/FibonacciManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/FibonacciManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/View/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/ConsolePrinter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -224,9 +203,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="230" />
-    <option name="y" value="53" />
-    <option name="width" value="1613" />
-    <option name="height" value="877" />
+    <option name="y" value="52" />
+    <option name="width" value="1614" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -398,12 +377,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563974280908</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ver-4.2 (decreased number of do{}while() usage)">
+      <created>1564165655456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564165655456</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49156117" visible="true" weight="0.14832215" />
       <window_info id="Structure" order="1" sideWeight="0.5084388" side_tool="true" visible="true" weight="0.14832215" />
