@@ -52,7 +52,7 @@ public class Task7Arguments implements ITask7Arguments {
     }
 
     @Override
-    public boolean validate(BufferedReader br) {
+    public boolean validate() {
         return intArg > 0;
     }
 

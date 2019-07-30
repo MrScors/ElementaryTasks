@@ -4,5 +4,5 @@ import java.io.BufferedReader;
 
 public interface ITask6Arguments {
     String getArgs();
-    boolean validate(BufferedReader br);
+    boolean validate();
 }

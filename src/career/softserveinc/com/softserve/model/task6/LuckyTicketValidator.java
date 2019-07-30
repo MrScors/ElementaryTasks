@@ -31,6 +31,18 @@ package career.softserveinc.com.softserve.model.task6;
 
 class LuckyTicketValidator {
 
+    static boolean isValid(int[] ticketNumbers) {
+        boolean isValid = true;
+        if (ticketNumbers.length % 2 != 0 || ticketNumbers.length < 6) return false;
+        for (int ticketNumber : ticketNumbers) {
+            if (ticketNumber < 0) {
+                isValid = false;
+                break;
+            }
+        }
+        return isValid;
+    }
+
     static boolean isLucky(int[] ticketNumbers) {
         return (isMoscowLucky(ticketNumbers) || isPetersburgLucky(ticketNumbers) || isDniproLucky(ticketNumbers));
     }

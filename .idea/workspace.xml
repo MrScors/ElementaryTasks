@@ -2,49 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="702ad37f-65cb-4aeb-8459-8d3e5a6e3e15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/ITask4Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/Task4Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/Task4Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/ITask6Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/ITask7Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/IntegerSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/IntegerSequenceCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/Task7Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/Task7Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/ITask8Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Arguments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task9/EffectiveMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task9/ITask9Arguments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task9/Task9Arguments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task9/Task9Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/NumberOfTaskToRun.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/RunnableTasks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/RunnableTasks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/Validatable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/Validatable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/ChessBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/ChessBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Drawable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/ITask1Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/ITask1Arguments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Task1Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Task1Arguments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Task1Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task1/Task1Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/Envelope.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/Envelope.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/ITask2Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/ITask2Arguments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/Task2Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/Task2Arguments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/Task2Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task2/Task2Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/ITask3Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/ITask3Arguments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/Task3Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/Task3Arguments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/Task3Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/Task3Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task3/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task4/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task4/FileManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task8/FibonacciManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/Model/task8/FibonacciManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/View/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/View/Reader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/career/softserveinc/com/softserve/View/Writer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task2/Task2Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task2/Task2Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/FibonacciManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/FibonacciManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/ITask4Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/ITask4Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/Task4Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/Task4Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/Task4Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task4/Task4Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/ITask6Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/ITask6Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/LuckyTicketValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Task6Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task6/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/ITask7Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/ITask7Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/Task7Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/Task7Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/Task7Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task7/Task7Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/ITask8Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/ITask8Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/model/task8/Task8Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/ConsolePrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/career/softserveinc/com/softserve/view/Reader.java" afterDir="false" />
     </list>
@@ -98,11 +79,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="career.softserveinc.com.softserve.model.task9" />
       <recent name="career.softserveinc.com.softserve.model.task7" />
       <recent name="career.softserveinc.com.softserve.model.task6" />
       <recent name="career.softserveinc.com.softserve.model.task8" />
       <recent name="career.softserveinc.com.softserve.model.task4" />
-      <recent name="career.softserveinc.com.softserve.Model.task3" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\ProgammingAndWeb\JavaApps\ElementaryTasks_Pavlov\src\career\softserveinc\com\softserve" />
@@ -124,7 +105,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="career.softserveinc.com.softserve.controller.Main" />
       <module name="ElementaryTasks_Pavlov" />
-      <option name="PROGRAM_PARAMETERS" value="1 278" />
+      <option name="PROGRAM_PARAMETERS" value="5 4 700" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -147,7 +128,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563517341782</updated>
-      <workItem from="1564397304387" duration="4560000" />
+      <workItem from="1564397304387" duration="4838000" />
+      <workItem from="1564406197730" duration="12125000" />
+      <workItem from="1564479117025" duration="9523000" />
     </task>
     <task id="LOCAL-00001" summary="ver-2.0 (architecture improved)">
       <created>1563646487654</created>
@@ -177,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564344216300</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ver-4.7 (task7 added and connected)">
+      <created>1564402345208</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564402345208</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +208,8 @@
     <MESSAGE value="ver-4.2 (decreased number of do{}while() usage)" />
     <MESSAGE value="ver-4.3 (Task4 and 8 are working now)" />
     <MESSAGE value="ver-4.3 (tasks 8 and 4 were connected, task 6 was added and connected)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ver-4.3 (tasks 8 and 4 were connected, task 6 was added and connected)" />
+    <MESSAGE value="ver-4.7 (task7 added and connected)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver-4.7 (task7 added and connected)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

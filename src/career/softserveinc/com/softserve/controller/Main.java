@@ -8,6 +8,8 @@ import career.softserveinc.com.softserve.model.task4.Task4Runner;
 import career.softserveinc.com.softserve.model.task6.Task6Runner;
 import career.softserveinc.com.softserve.model.task7.Task7Runner;
 import career.softserveinc.com.softserve.model.task8.Task8Runner;
+import career.softserveinc.com.softserve.model.task9.EffectiveMath;
+import career.softserveinc.com.softserve.model.task9.Task9Runner;
 import career.softserveinc.com.softserve.view.Reader;
 import career.softserveinc.com.softserve.view.ConsolePrinter;
 
@@ -90,6 +92,16 @@ public class Main {
 
                 case 8: {
                     rt = new Task8Runner(args);
+                    try {
+                        rt.run(br);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                }
+
+                case 9: {
+                    rt = new Task9Runner(args);
                     try {
                         rt.run(br);
                     } catch (IOException e) {

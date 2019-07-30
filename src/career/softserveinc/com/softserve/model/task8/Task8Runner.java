@@ -25,7 +25,7 @@ public class Task8Runner implements RunnableTasks {
         ConsolePrinter.tellYouAboutTask8();
         ConsolePrinter.askWhetherPassReceivedArguments();
         boolean useArgs = Reader.readYesOrNo(br);
-        if (useArgs && new Task8Arguments(args).validate(br)) {
+        if (useArgs && new Task8Arguments(args).validate()) {
             validArguments = new Task8Arguments(args);
             ConsolePrinter.writeResultsOfTask(invokeTask8(validArguments));
         } else {
@@ -55,7 +55,7 @@ public class Task8Runner implements RunnableTasks {
         do {
             ConsolePrinter.askToWriteSomeArgumentsForTask8();
             validArguments = new Task8Arguments(readConsoleArguments(br));
-            if (!validArguments.validate(br)) {
+            if (!validArguments.validate()) {
                 ConsolePrinter.writeInvalidArgsErrorMessage();
             } else break;
         } while (true);

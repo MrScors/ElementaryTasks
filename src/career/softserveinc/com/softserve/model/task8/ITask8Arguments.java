@@ -4,5 +4,5 @@ import java.io.BufferedReader;
 
 public interface ITask8Arguments {
     long[] getArgs();
-    boolean validate(BufferedReader br);
+    boolean validate();
 }

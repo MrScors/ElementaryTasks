@@ -83,6 +83,16 @@ public class Reader {
         return argumentsAsLongArray;
     }
 
+    public static int[] readTask9Arguments(BufferedReader br) throws NumberFormatException, IOException {
+        String argumentAsString = br.readLine();
+        String[] argumentAsStringsArray = argumentAsString.split(" ");
+        int[] arguments = new int[argumentAsStringsArray.length];
+        for (int i = 0; i < argumentAsStringsArray.length; i++) {
+            arguments[i] = Integer.parseInt(argumentAsStringsArray[i]);
+        }
+        return arguments;
+    }
+
     public static boolean readYesOrNo(BufferedReader br) throws IOException {
         String answer = br.readLine();
         return answer.toLowerCase().equals("yes") || answer.toLowerCase().equals("y");

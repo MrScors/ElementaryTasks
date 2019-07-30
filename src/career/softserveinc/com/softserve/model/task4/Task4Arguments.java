@@ -45,7 +45,7 @@ public class Task4Arguments implements ITask4Arguments {
     }
 
     @Override
-    public boolean validate(BufferedReader br) {
+    public boolean validate() {
 
         File file = new File(stringArgs[0]);
         if (!file.isFile()) return false;

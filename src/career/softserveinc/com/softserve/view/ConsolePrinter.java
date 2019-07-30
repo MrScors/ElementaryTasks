@@ -124,6 +124,18 @@ public class ConsolePrinter {
                 "borderValue -> long type; lengthValue < 92;");
     }
 
+    // task_9
+
+    public static void tellYouAboutTask9() {
+        System.out.println("You've chose task9");
+    }
+
+    public static void askToWriteSomeArgumentsForTask9() {
+        System.out.println("Please, enter arguments to use in task9\n" +
+                "(must be 1 string in format <integer> <exponent> <opacity>" + "\n" +
+                "or <integerAndExponent> <opacity> )");
+    }
+
     public static void askWhetherAddMoreTriangles() {
         System.out.println("Do you want to add more triangles?");
     }
@@ -138,12 +150,12 @@ public class ConsolePrinter {
                         "Task2 - check envelopes" + "\n" +
                         "Task3 - calculate triangles' square" + "\n" +
                         "Task4 - find and count/replace substrings in .txt file" + "\n" +
-                        "Task6 - find, count and show all lucky tickets in .txt file" + "\n" +
+                        "Task6 - count number of lucky tickets" + "\n" +
                         "Task7 - create sequence of natural numbers which square is lower than given number" + "\n" +
                         "Task8 - get subSequence of Fibonacci Numbers of given length or with given borders" + "\n" +
+                        "Task9 - effective powering of integer" + "\n" +
                         "Enter 11/exit to exit");
     }
-
     public static void separateNewTask() {
         System.out.println("---------------------------------------------------------" +
                 "\nMake your choice");

@@ -27,36 +27,36 @@
  *
  */
 
-package career.softserveinc.com.softserve.model.task6;
+package career.softserveinc.com.softserve.model.task9;
 
-import java.io.File;
+public class Task9Arguments implements ITask9Arguments {
+    private int[] intArgs;
 
-public class Task6Arguments implements ITask6Arguments {
-    private String filePath;
-
-    Task6Arguments(String[] args) {
-        filePath = args[0];
+    Task9Arguments(String[] stringArgs){
+        try{
+            intArgs = new int[stringArgs.length];
+            for (int i = 0; i < stringArgs.length; i++) {
+                intArgs[i] = Integer.parseInt(stringArgs[i]);
+            }
+        }catch (NumberFormatException e){
+            intArgs = null;
+        }
     }
 
-    Task6Arguments(String stringArgs) {
-        filePath = stringArgs;
+    Task9Arguments(int[] intArgs) {
+        this.intArgs = intArgs;
     }
 
     @Override
-    public String getArgs() {
-        return filePath;
+    public int[] getArgs() {
+        return intArgs;
     }
 
     @Override
     public boolean validate() {
-        try{
-            File file = new File(filePath);
-            return file.isFile();
-        } catch (NullPointerException e){
-            return false;
-        }
-
-
+        if(intArgs.length != 3 && intArgs.length != 2) return false;
+        for (int intArg : intArgs) if (intArg <= 0) return false;
+        return true;
     }
 
 

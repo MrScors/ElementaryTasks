@@ -21,7 +21,7 @@ public class Task4Runner implements RunnableTasks {
         ConsolePrinter.tellYouAboutTask4();
         ConsolePrinter.askWhetherPassReceivedArguments();
         boolean useArgs = Reader.readYesOrNo(br);
-        if (useArgs && new Task4Arguments(args).validate(br)) {
+        if (useArgs && new Task4Arguments(args).validate()) {
             validArguments = new Task4Arguments(args);
             ConsolePrinter.writeResultsOfTask(invokeTask4(validArguments));
         } else {
@@ -52,7 +52,7 @@ public class Task4Runner implements RunnableTasks {
         do {
             ConsolePrinter.askToWriteSomeArgumentsForTask4();
             validArguments = new Task4Arguments(readConsoleArguments(br));
-            if (!validArguments.validate(br)) {
+            if (!validArguments.validate()) {
                 ConsolePrinter.writeInvalidArgsErrorMessage();
             } else break;
         } while (true);

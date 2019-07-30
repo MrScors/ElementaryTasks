@@ -21,8 +21,8 @@ public class Task6Runner implements RunnableTasks {
         ConsolePrinter.tellYouAboutTask6();
         ConsolePrinter.askWhetherPassReceivedArguments();
         boolean useArgs = Reader.readYesOrNo(br);
-        if (useArgs && new Task6Arguments(args[0]).validate(br)) {
-            validArguments = new Task6Arguments(args[0]);
+        if (useArgs && new Task6Arguments(args).validate()) {
+            validArguments = new Task6Arguments(args);
             ConsolePrinter.writeResultsOfTask(invokeTask6(validArguments));
         } else {
             if (useArgs) {
@@ -36,8 +36,8 @@ public class Task6Runner implements RunnableTasks {
     private static StringBuilder invokeTask6(ITask6Arguments arguments) throws IOException {
         StringBuilder sb = new StringBuilder();
         LuckyTicketCounter ltc = new LuckyTicketCounter(arguments.getArgs());
-        sb.append("Number of lucky tickets in this file: ").append
-                (ltc.countNumberOfLuckyTicketsInTextFile()).append
+        sb.append("Number of lucky tickets between two tickets in this file: ").append
+                (ltc.countNumberOfLuckyTickets()).append
                 ("\n");
         sb.append("Lucky tickets:\n").append(ltc.getLuckyTickets());
         return sb;
@@ -48,7 +48,7 @@ public class Task6Runner implements RunnableTasks {
         do {
             ConsolePrinter.askToWriteSomeArgumentsForTask6();
             validArguments = new Task6Arguments(Reader.readTask6Arguments(br));
-            if (!validArguments.validate(br)) {
+            if (!validArguments.validate()) {
                 ConsolePrinter.writeInvalidArgsErrorMessage();
             } else break;
         } while (true);

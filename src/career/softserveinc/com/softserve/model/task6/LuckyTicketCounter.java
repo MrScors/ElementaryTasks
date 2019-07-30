@@ -33,118 +33,69 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class LuckyTicketCounter {
 
     private List<Ticket> luckyTickets = new ArrayList<>();
     private String filePath;
+    private Ticket firstBorderTicket = new Ticket(new int[]{0,0,0,0,0,0});
+    private Ticket lastBorderTicket = new Ticket(new int[]{9,9,9,9,9,9});
 
     LuckyTicketCounter(String filePath) {
         this.filePath = filePath;
     }
 
-    int countNumberOfLuckyTicketsInTextFile() throws IOException {
+    int countNumberOfLuckyTickets() throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(filePath));
         String firstLine = br.readLine();
-        if(firstLine.equals("Moscow")) return countNumberOfMoscowLuckyTickets(br);
-        if(firstLine.equals("Piter")) return countNumberOfPetersburgLuckyTickets(br);
-        if(firstLine.equals("Dnipro")) return countNumberOfDniproLuckyTickets(br);
-        return countNumberOfLuckyTickets(br);
+        if (firstLine.equals("Moscow")) return countNumberOfMoscowLuckyTickets();
+        else if (firstLine.equals("Piter")) return countNumberOfPetersburgLuckyTickets();
+        else if (firstLine.equals("Dnipro")) return countNumberOfDniproLuckyTickets();
+        else return countNumberOfAnyLuckyTickets();
     }
 
-    private int countNumberOfMoscowLuckyTickets(BufferedReader br) throws IOException {
-        String line;
-        while ((line = br.readLine()) != null) {
-            String[] splintedLine = line.split(" ");
-            for (String pieceOfLine:splintedLine) {
-                if(pieceOfLine.length()%2==0 && pieceOfLine.length()>=6){
-                    char[] ticketNumbersInChars = pieceOfLine.toCharArray();
-                    int[] ticketNumbers = new int[ticketNumbersInChars.length];
-                    for (int i=0; i<ticketNumbersInChars.length; i++) {
-                        try{
-                            ticketNumbers[i] = Character.getNumericValue(ticketNumbersInChars[i]);
-                        }catch(NumberFormatException ignored){}
-                    }
-                    if(LuckyTicketValidator.isMoscowLucky(ticketNumbers)){
-                        luckyTickets.add(new Ticket(ticketNumbers));
-                    }
-
-                }
-            }
+    private int countNumberOfMoscowLuckyTickets(){
+        Ticket ticket = lastBorderTicket;
+        while(!ticket.nextTicket().equals(firstBorderTicket)){
+            if(LuckyTicketValidator.isMoscowLucky(ticket.getTicketNumbers())) luckyTickets.add(ticket);
+            ticket = ticket.nextTicket();
         }
-        br.close();
         return luckyTickets.size();
     }
 
-    private int countNumberOfPetersburgLuckyTickets(BufferedReader br) throws IOException {
-        String line;
-        while ((line = br.readLine()) != null) {
-            String[] splintedLine = line.split(" ");
-            for (String pieceOfLine:splintedLine) {
-                if(pieceOfLine.length()%2==0 && pieceOfLine.length()>=6){
-                    char[] ticketNumbersInChars = pieceOfLine.toCharArray();
-                    int[] ticketNumbers = new int[ticketNumbersInChars.length];
-                    for (int i=0; i<ticketNumbersInChars.length; i++) {
-                        try{
-                            ticketNumbers[i] = Character.getNumericValue(ticketNumbersInChars[i]);
-                        }catch(NumberFormatException ignored){}
-                    }
-                    if(LuckyTicketValidator.isPetersburgLucky(ticketNumbers)) luckyTickets.add(new Ticket(ticketNumbers));
-                }
-            }
+    private int countNumberOfPetersburgLuckyTickets(){
+        Ticket ticket = lastBorderTicket;
+        while(!ticket.nextTicket().equals(firstBorderTicket)){
+            if(LuckyTicketValidator.isPetersburgLucky(ticket.getTicketNumbers())) luckyTickets.add(ticket);
+            ticket = ticket.nextTicket();
         }
-        br.close();
         return luckyTickets.size();
     }
 
-    private int countNumberOfDniproLuckyTickets(BufferedReader br) throws IOException {
-        String line;
-        while ((line = br.readLine()) != null) {
-            String[] splintedLine = line.split(" ");
-            for (String pieceOfLine:splintedLine) {
-                if(pieceOfLine.length()%2==0 && pieceOfLine.length()>=6){
-                    char[] ticketNumbersInChars = pieceOfLine.toCharArray();
-                    int[] ticketNumbers = new int[ticketNumbersInChars.length];
-                    for (int i=0; i<ticketNumbersInChars.length; i++) {
-                        try{
-                            ticketNumbers[i] = Character.getNumericValue(ticketNumbersInChars[i]);
-                        }catch(NumberFormatException ignored){}
-                    }
-                    if(LuckyTicketValidator.isDniproLucky(ticketNumbers)) luckyTickets.add(new Ticket(ticketNumbers));
-                }
-            }
+    private int countNumberOfDniproLuckyTickets(){
+        Ticket ticket = firstBorderTicket;
+        while(ticket.lowerThan(lastBorderTicket)){
+            if(LuckyTicketValidator.isDniproLucky(ticket.getTicketNumbers())) luckyTickets.add(ticket);
+            ticket = ticket.nextTicket();
         }
-        br.close();
         return luckyTickets.size();
     }
 
-    private int countNumberOfLuckyTickets(BufferedReader br) throws IOException {
-        String line;
-        while ((line = br.readLine()) != null) {
-            String[] splintedLine = line.split(" ");
-            for (String pieceOfLine:splintedLine) {
-                if(pieceOfLine.length()%2==0 && pieceOfLine.length()>=6){
-                    char[] ticketNumbersInChars = pieceOfLine.toCharArray();
-                    int[] ticketNumbers = new int[ticketNumbersInChars.length];
-                    for (int i=0; i<ticketNumbersInChars.length; i++) {
-                        try{
-                            ticketNumbers[i] = Character.getNumericValue(ticketNumbersInChars[i]);
-                        }catch(NumberFormatException ignored){}
-                    }
-                    if(LuckyTicketValidator.isLucky(ticketNumbers)) luckyTickets.add(new Ticket(ticketNumbers));
-
-                }
-            }
+    private int countNumberOfAnyLuckyTickets(){
+        Ticket ticket = firstBorderTicket;
+        while(!ticket.nextTicket().equals(lastBorderTicket)){
+            if(LuckyTicketValidator.isLucky(ticket.getTicketNumbers())) luckyTickets.add(ticket);
+            ticket = ticket.nextTicket();
         }
-        br.close();
         return luckyTickets.size();
     }
 
 
-    StringBuilder getLuckyTickets(){
+    StringBuilder getLuckyTickets() {
         StringBuilder sb = new StringBuilder();
-        for (Ticket ticket: luckyTickets) {
+        for (Ticket ticket : luckyTickets) {
             sb.append(ticket.toString()).append("\n");
         }
         return sb;

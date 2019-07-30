@@ -21,7 +21,7 @@ public class Task7Runner implements RunnableTasks {
         ConsolePrinter.tellYouAboutTask7();
         ConsolePrinter.askWhetherPassReceivedArguments();
         boolean useArgs = Reader.readYesOrNo(br);
-        if (useArgs && new Task7Arguments(args).validate(br)) {
+        if (useArgs && new Task7Arguments(args).validate()) {
             validArguments = new Task7Arguments(args);
             ConsolePrinter.writeResultsOfTask(invokeTask7(validArguments));
         } else {
@@ -44,7 +44,7 @@ public class Task7Runner implements RunnableTasks {
         do {
             ConsolePrinter.askToWriteSomeArgumentsForTask7();
             validArguments = new Task7Arguments(Reader.readTask7Arguments(br));
-            if (!validArguments.validate(br)) {
+            if (!validArguments.validate()) {
                 ConsolePrinter.writeInvalidArgsErrorMessage();
             } else break;
         } while (true);
