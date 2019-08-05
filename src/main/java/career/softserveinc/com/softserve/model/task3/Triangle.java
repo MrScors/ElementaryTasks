@@ -34,12 +34,14 @@ public class Triangle implements Comparable<Triangle> {
     private int b;
     private int c;
     private String name;
+    private double square;
 
     public Triangle() { // default triangle
         a = 3;
         b = 3;
         c = 3;
         name = "Default";
+        square = calculateSquare();
     }
 
     Triangle(String name, int a, int b, int c) {
@@ -47,6 +49,11 @@ public class Triangle implements Comparable<Triangle> {
         this.b = b;
         this.c = c;
         this.name = name;
+        square = calculateSquare();
+    }
+
+    double getSquare(){
+        return Math.floor(square*100)/100.0;
     }
 
     private double calculateSquare() {
@@ -57,7 +64,7 @@ public class Triangle implements Comparable<Triangle> {
 
 
     public String toString() {
-        return "[" + name + "]: " + calculateSquare() + " cm";
+        return "[" + name + "]: " + getSquare() + " cm";
     }
 
     @Override

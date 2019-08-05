@@ -29,7 +29,6 @@
 
 package main.java.career.softserveinc.com.softserve.model.task4;
 
-import java.io.BufferedReader;
 import java.io.File;
 
 public class Task4Arguments implements ITask4Arguments {

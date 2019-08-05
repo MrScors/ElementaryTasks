@@ -1,13 +1,13 @@
 package main.java.career.softserveinc.com.softserve.model.task6;
 
 public class Ticket implements Comparable<Ticket>{
-    int number=0;
-    int[] ticketNumbers;
+    private int number=0;
+    private int[] ticketNumbers;
 
     Ticket(int[] ticketNumbers) {
         this.ticketNumbers = ticketNumbers;
-        for (int i = ticketNumbers.length-1; i > 0 ; i--) {
-            number += ticketNumbers[i]*Math.pow(10, i);
+        for (int i = 0; i < ticketNumbers.length; i++) {
+            number += ticketNumbers[ticketNumbers.length-i-1]*Math.pow(10, i);
         }
     }
 

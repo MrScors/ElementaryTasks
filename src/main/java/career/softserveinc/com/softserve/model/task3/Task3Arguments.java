@@ -71,7 +71,7 @@ public class Task3Arguments implements ITask3Arguments {
         return allTrianglesValid;
     }
 
-    public boolean validate(String stringArgument) {
+    private boolean validate(String stringArgument) {
         int[] sides = new int[3];
         String[] stringArgumentAsArray = stringArgument.split(",");
         if (stringArgumentAsArray.length != 4) return false;
