@@ -41,7 +41,7 @@ public class Task4Runner implements RunnableTasks {
             sb.append(fm.countNumberOfSubstrings(arguments.getArgs()[1]));
         } else {
             sb.append("Resulting file's content:\n");
-            fm.changeSubstringsToAnother(arguments.getArgs()[1], arguments.getArgs()[2]);
+            fm.changeSubstringsToAnotherInFile(arguments.getArgs()[1], arguments.getArgs()[2]);
             sb.append(fm.readFile());
         }
         return sb;
@@ -50,7 +50,7 @@ public class Task4Runner implements RunnableTasks {
     private static Task4Arguments readValidConsoleArguments(BufferedReader br) {
         Task4Arguments validArguments;
         do {
-            ConsolePrinter.askToWriteSomeArgumentsForTask4();
+            ConsolePrinter.askToChoseOptionForTask4();
             validArguments = new Task4Arguments(readConsoleArguments(br));
             if (!validArguments.validate()) {
                 ConsolePrinter.writeInvalidArgsErrorMessage();
@@ -60,7 +60,7 @@ public class Task4Runner implements RunnableTasks {
     }
 
     private static String[] readConsoleArguments(BufferedReader br) {
-        String consoleArguments;
+        String consoleArguments[];
         do {
             try {
                 consoleArguments = Reader.readTask4Arguments(br);
@@ -69,7 +69,7 @@ public class Task4Runner implements RunnableTasks {
                 System.out.println(e.getMessage());
             }
         } while (true);
-        return consoleArguments.split(" ");
+        return consoleArguments;
 
 
     }

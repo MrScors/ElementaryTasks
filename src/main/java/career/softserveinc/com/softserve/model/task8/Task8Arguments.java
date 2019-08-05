@@ -59,7 +59,7 @@ public class Task8Arguments implements ITask8Arguments {
     @Override
     public boolean validate() {
 
-        if(longArgs.length == 1 && longArgs[0] < 94) return true;
+        if(longArgs.length == 1 && longArgs[0] < 19) return true;
         return longArgs.length == 2;
 
     }
