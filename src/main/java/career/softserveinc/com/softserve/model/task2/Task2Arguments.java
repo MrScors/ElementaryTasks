@@ -53,7 +53,7 @@ public class Task2Arguments implements ITask2Arguments {
 
     }
 
-    private void parseStringArgumentsToIntArguments(String[] stringArguments) throws NumberFormatException {
+    private void parseStringArgumentsToIntArguments(String[] stringArguments) {
         doubleArguments = new double[stringArguments.length];
         try {
             for (int i = 0; i < stringArguments.length; i++) {

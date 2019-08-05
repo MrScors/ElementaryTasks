@@ -5,6 +5,8 @@ import main.java.career.softserveinc.com.softserve.view.ConsolePrinter;
 import main.java.career.softserveinc.com.softserve.arguments_input.Reader;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 
 public class Task6Runner implements RunnableTasks {
@@ -33,9 +35,12 @@ public class Task6Runner implements RunnableTasks {
         }
     }
 
-    private static StringBuilder invokeTask6(ITask6Arguments arguments) {
+    private static StringBuilder invokeTask6(ITask6Arguments arguments) throws IOException {
         StringBuilder sb = new StringBuilder();
-
+        Ticket start = new Ticket(arguments.getStartTicketNumbers());
+        Ticket end = new Ticket(arguments.getEndTicketNumbers());
+        String instructions = readWayToCountTickets(arguments.getFilePath());
+        sb.append(TicketOperator.countNumberOfLuckyTicketsAccordingToInstructions(instructions, start, end));
         return sb;
     }
 
@@ -43,12 +48,17 @@ public class Task6Runner implements RunnableTasks {
         Task6Arguments validArguments;
         do {
             ConsolePrinter.askToWriteSomeArgumentsForTask7();
-            validArguments = new Task6Arguments(Reader.readTask7Arguments(br));
+            validArguments = new Task6Arguments(Reader.readTask6Arguments(br));
             if (!validArguments.validate()) {
                 ConsolePrinter.writeInvalidArgsErrorMessage();
             } else break;
         } while (true);
         return validArguments;
+    }
+
+    private static String readWayToCountTickets(String filePath) throws IOException {
+        BufferedReader file = new BufferedReader(new FileReader(filePath));
+        return file.readLine();
     }
 
 }

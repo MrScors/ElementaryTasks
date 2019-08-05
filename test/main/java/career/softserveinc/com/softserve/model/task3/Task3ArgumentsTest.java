@@ -1,91 +1,62 @@
 package main.java.career.softserveinc.com.softserve.model.task3;
 
-import main.java.career.softserveinc.com.softserve.model.task2.Task2Arguments;
-import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class Task3ArgumentsTest {
 
-
-    @Test
-    void addTestStringGiven(){
-        Task3Arguments task3Arguments = new Task3Arguments();
-        boolean actual = task3Arguments.add("name,7,7,7");
-        assertTrue(actual);
+    @ParameterizedTest
+    @ValueSource(strings = {"name,7,7,7, true",
+            "name,7,7,2fdsh, false",
+            "name,7,7,2222, false",
+            "name,7,7,7, name,9,9,9, true",
+            "name,7,7,7, name,9,9,dfg9, false",
+            "name,7,7,7, name,9,9,9999, false",
+            "name,9,239,9, name,sdf9,9,9, false"})
+    void addParametrizedTestReturnValue(String string) {
+        String[] splintedArgs = string.split(", ");
+        String[] splintedActualArgs = new String[splintedArgs.length-1];
+        System.arraycopy(splintedArgs, 0, splintedActualArgs, 0, splintedActualArgs.length);
+        Task3Arguments args = new Task3Arguments();
+        boolean actual = args.add(splintedActualArgs);
+        boolean expected = Boolean.parseBoolean(splintedArgs[splintedArgs.length-1]);
+        assertEquals(expected, actual);
     }
 
-    @Test
-    void addTestInvalidStringGiven(){
-        Task3Arguments task3Arguments = new Task3Arguments();
-        boolean actual = task3Arguments.add("name,7,7m7,7");
-        assertFalse(actual);
+    @ParameterizedTest
+    @ValueSource(strings = {"name,7,7,7, 1",
+            "name,7,7,2fdsh, 0",
+            "name,7,7,2222, 0",
+            "name,7,7,7, name,9,9,9, 2",
+            "name,7,7,7, name,9,9,dfg9, 1",
+            "name,7,7,7, name,9,9,9999, 1",
+            "name,9,239,9, name,sdf9,9,9, 0"})
+    void addParametrizedTestWorkingOrNot(String string) { // we use add() to add new Triangles
+        String[] splintedArgs = string.split(", ");
+        Task3Arguments args = new Task3Arguments();
+        for (int i = 0; i < splintedArgs.length-1; i++) args.add(splintedArgs[i]);
+        int actual = args.getArgs().size();
+        int expected = Integer.parseInt(splintedArgs[splintedArgs.length-1]);
+        assertEquals(expected, actual);
     }
 
-    @Test
-    void addTestStringsGiven(){
-        Task3Arguments task3Arguments = new Task3Arguments();
-        boolean actual = task3Arguments.add(new String[]{"name,7,7,7", "name,9,9,9"});
-        assertTrue(actual);
+    @ParameterizedTest
+    @ValueSource(strings = {"name,7,7,7, 1",
+            "name,7,7,2fdsh, 0",
+            "name,7,7,2222, 0",
+            "name,7,7,7, name,9,9,9, 2",
+            "name,7,7,7, name,9,9,dfg9, 1",
+            "name,7,7,7, name,9,9,9999, 1",
+            "name,9,239,9, name,sdf9,9,9, 0"})
+    void getArgsParametrizedTest(String string) { // we use constructor to add Triangles
+        String[] splintedArgs = string.split(", ");
+        String[] splintedActualArgs = new String[splintedArgs.length-1];
+        System.arraycopy(splintedArgs, 0, splintedActualArgs, 0, splintedActualArgs.length);
+        Task3Arguments args = new Task3Arguments(splintedActualArgs);
+        int actual = args.getArgs().size();
+        int expected = Integer.parseInt(splintedArgs[splintedArgs.length-1]);
+        assertEquals(expected, actual);
     }
-
-    @Test
-    void addTestPartlyInvalidStringsGiven(){
-        Task3Arguments task3Arguments = new Task3Arguments();
-        boolean actual = task3Arguments.add(new String[]{"name,7,7,7","name,fff9,9,9"});
-        assertFalse(actual);
-    }
-
-    @Test
-    void addTestInvalidStringsGiven(){
-        Task3Arguments task3Arguments = new Task3Arguments();
-        boolean actual = task3Arguments.add(new String[]{"name,7,7,fh","name,fff9,9,9"});
-        assertFalse(actual);
-    }
-
-    @Test
-    void getArgsTestStringGiven() {
-        Task3Arguments task3Arguments = new Task3Arguments("name,7,7,7");
-        List<Triangle> actual = task3Arguments.getArgs();
-        List<Triangle> expected = new ArrayList<>();
-        expected.add(new Triangle("name", 7, 7,7));
-        assertEquals(expected.toString(), actual.toString());
-    }
-
-    @Test
-    void getArgsTestInvalidStringGiven() {
-        Task3Arguments task3Arguments = new Task3Arguments("name,7,7");
-        List<Triangle> actual = task3Arguments.getArgs();
-        assertEquals("[]", actual.toString());
-    }
-
-    @Test
-    void getArgsTestStringArgsGiven() {
-        Task3Arguments task3Arguments = new Task3Arguments(new String[]{"name,7,7,7","name,9,9,9"});
-        List<Triangle> actual = task3Arguments.getArgs();
-        List<Triangle> expected = new ArrayList<>();
-        expected.add(new Triangle("name", 7, 7,7));
-        expected.add(new Triangle("name", 9, 9,9));
-        assertEquals(expected.toString(), actual.toString());
-    }
-
-    @Test
-    void getArgsTestPartlyInvalidStringArgsGiven() {
-        Task3Arguments task3Arguments = new Task3Arguments(new String[]{"name,7,7,,,","name,9,9,9"});
-        List<Triangle> actual = task3Arguments.getArgs();
-        List<Triangle> expected = new ArrayList<>();
-        expected.add(new Triangle("name", 9, 9,9));
-        assertEquals(expected.toString(), actual.toString());
-    }
-
-    @Test
-    void getArgsTestInvalidStringArgsGiven() {
-        Task3Arguments task3Arguments = new Task3Arguments(new String[]{"name,7,7,,,","naml,.,,,9,9,...,9"});
-        List<Triangle> actual = task3Arguments.getArgs();
-        assertEquals("[]", actual.toString());
-    }
-
 }

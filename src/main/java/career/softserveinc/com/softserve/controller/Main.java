@@ -5,6 +5,7 @@ import main.java.career.softserveinc.com.softserve.model.task1.Task1Runner;
 import main.java.career.softserveinc.com.softserve.model.task2.Task2Runner;
 import main.java.career.softserveinc.com.softserve.model.task3.Task3Runner;
 import main.java.career.softserveinc.com.softserve.model.task4.Task4Runner;
+import main.java.career.softserveinc.com.softserve.model.task6.Task6Runner;
 import main.java.career.softserveinc.com.softserve.model.task7.Task7Runner;
 import main.java.career.softserveinc.com.softserve.model.task8.Task8Runner;
 import main.java.career.softserveinc.com.softserve.model.task9.Task9Runner;
@@ -14,6 +15,7 @@ import main.java.career.softserveinc.com.softserve.view.ConsolePrinter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.function.Function;
 
 public class Main {
 
@@ -68,15 +70,15 @@ public class Main {
                     break;
                 }
 
-//                case 6: {
-//                    rt = new Task6Runner(args);
-//                    try {
-//                        rt.run(br);
-//                    } catch (IOException e) {
-//                        e.printStackTrace();
-//                    }
-//                    break;
-//                }
+                case 6: {
+                    rt = new Task6Runner(args);
+                    try {
+                        rt.run(br);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                }
 
                 case 7: {
                     rt = new Task7Runner(args);
