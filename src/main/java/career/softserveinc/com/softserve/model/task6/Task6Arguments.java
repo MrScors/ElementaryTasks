@@ -82,22 +82,18 @@ public class Task6Arguments implements ITask6Arguments {
         }
     }
 
-    @Override
     public String getFilePath() {
         return filePath;
     }
 
-    @Override
     public int[] getStartTicketNumbers() {
         return startTicketNumbers;
     }
 
-    @Override
     public int[] getEndTicketNumbers() {
         return endTicketNumbers;
     }
 
-    @Override
     public boolean validate() {
         if (!(new File(filePath).isFile() &&
                 countOfNumbersInTickets == startTicketNumbers.length &&

@@ -2,35 +2,45 @@
 package main.java.career.softserveinc.com.softserve.model.task4;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 class FileManager {
 
     private String filePath;
+    private BufferedReader fileReader;
+    private FileOutputStream fileWriter;
 
-    FileManager(String filePath) {
+    FileManager(String filePath) throws FileNotFoundException {
         this.filePath = filePath;
+        this.fileReader = new BufferedReader(new FileReader(filePath));
+        this.fileWriter = new FileOutputStream(filePath);
     }
 
-    StringBuilder readFile() throws IOException {
-        StringBuilder sb = new StringBuilder();
-        BufferedReader file = new BufferedReader(new FileReader(filePath));
-        String line;
+    FileManager(String filePath, BufferedReader fileReader) throws FileNotFoundException {
+        this.fileReader = fileReader;
+        this.fileWriter = new FileOutputStream(filePath);
+    }
 
-        while ((line = file.readLine()) != null) {
+    FileManager(BufferedReader fileReader, FileOutputStream fileWriter) throws FileNotFoundException {
+        this.fileReader = fileReader;
+        this.fileWriter = fileWriter;
+    }
+
+
+    String readFile() throws IOException {
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = fileReader.readLine()) != null) {
             sb.append(line);
             sb.append('\n');
         }
-        return sb;
+        return sb.toString().substring(0, sb.length()-1);
     }
 
     //C:\MrScors\Args.txt test
 
     int countNumberOfSubstrings(String wanted) throws IOException {
         int result = 0;
-        String str = readFile().toString();
+        String str = readFile();
         wanted = wanted.replaceAll("\\s+","");
         str = str.replaceAll("\\s+","");
         do{
@@ -43,42 +53,20 @@ class FileManager {
         return result;
     }
 
-    void changeSubstringsToAnotherInFile(String oldOne, String newOne) throws IOException {
-        writeToFile(changeSubstringsToAnother(oldOne, newOne));
-    }
-
-    private String changeSubstringsToAnother(String oldOne, String newOne) throws IOException {
-        int oldInCharsCounter = 0;
-        int newInCharsCounter = 0;
-        int fileContentCounter = 0;
-        char[] oldInChars = oldOne.toCharArray();
-        char[] newInChars = newOne.toCharArray();
-        char[] fileContentAsChars = readFile().toString().toCharArray();
-        List<Character> fileContent = new ArrayList<>();
-        for (char fileContentAsChar : fileContentAsChars) {
-            fileContent.add(fileContentAsChar);
-        }
-
-        do{
-            if(oldInCharsCounter == oldInChars.length) break;
-            if(oldInChars[oldInCharsCounter]==fileContent.get(fileContentCounter++)) oldInCharsCounter++;
-            else break;
-        }while (true);
-        if(oldInCharsCounter == oldInChars.length);
-
-        String str = readFile().toString();
-        do{
-            if(str.contains(oldOne)) {
-                str = str.replaceAll(oldOne, newOne);
-            } else break;
-        }while(true);
+    String changeSubstringsToAnotherInFile(String oldOne, String newOne) throws IOException {
+        String str = readFile();
+        str = str.replaceAll(oldOne, newOne);
+        str = str.replaceAll(oldOne.replaceAll(" ", "\n"),
+                newOne.replaceAll(" ", "\n"));
+        str = str.replaceAll(oldOne.replaceAll(" ", "\t"),
+                newOne.replaceAll(" ", "\t"));
+        writeToFile(str);
         return str;
     }
 
     private void writeToFile(String str) throws IOException {
-        FileOutputStream fileOut = new FileOutputStream(filePath);
-        fileOut.write(str.getBytes());
-        fileOut.close();
+        fileWriter.write(str.getBytes());
+        fileWriter.close();
     }
 
 }

@@ -29,8 +29,6 @@
 
 package main.java.career.softserveinc.com.softserve.model.task7;
 
-import java.io.BufferedReader;
-
 public class Task7Arguments implements ITask7Arguments {
     private int intArg;
 
@@ -46,12 +44,10 @@ public class Task7Arguments implements ITask7Arguments {
         }
     }
 
-    @Override
     public int getArgs() {
         return intArg;
     }
 
-    @Override
     public boolean validate() {
         return intArg > 0;
     }

@@ -10,6 +10,11 @@ import java.io.IOException;
 public class Task4Runner implements RunnableTasks {
 
     private String[] args;
+    private static final int FILEPATH_INDEX = 0;
+    private static final int NEW_STRING_INDEX = 1;
+    private static final int OLD_STRING_INDEX = 2;
+    private static final int STRING_TO_FIND_INDEX = 1;
+
 
     public Task4Runner(String[] args) {
         this.args = args;
@@ -35,14 +40,13 @@ public class Task4Runner implements RunnableTasks {
 
     private static StringBuilder invokeTask4(ITask4Arguments arguments) throws IOException {
         StringBuilder sb = new StringBuilder();
-        FileManager fm = new FileManager(arguments.getArgs()[0]);
+        FileManager fm = new FileManager(arguments.getArgs()[FILEPATH_INDEX]);
         if (arguments.getArgs().length == 2) {
             sb.append("Number of given strings: ");
-            sb.append(fm.countNumberOfSubstrings(arguments.getArgs()[1]));
+            sb.append(fm.countNumberOfSubstrings(arguments.getArgs()[STRING_TO_FIND_INDEX]));
         } else {
             sb.append("Resulting file's content:\n");
-            fm.changeSubstringsToAnotherInFile(arguments.getArgs()[1], arguments.getArgs()[2]);
-            sb.append(fm.readFile());
+            sb.append(fm.changeSubstringsToAnotherInFile(arguments.getArgs()[NEW_STRING_INDEX], arguments.getArgs()[OLD_STRING_INDEX]));
         }
         return sb;
     }
@@ -60,7 +64,7 @@ public class Task4Runner implements RunnableTasks {
     }
 
     private static String[] readConsoleArguments(BufferedReader br) {
-        String consoleArguments[];
+        String[] consoleArguments;
         do {
             try {
                 consoleArguments = Reader.readTask4Arguments(br);
@@ -70,8 +74,6 @@ public class Task4Runner implements RunnableTasks {
             }
         } while (true);
         return consoleArguments;
-
-
     }
 
 }

@@ -1,8 +1,5 @@
 package main.java.career.softserveinc.com.softserve.model.task6;
 
-import java.math.BigDecimal;
-import java.util.function.Function;
-
 public class CounterOfLuckyTickets {
 
     public static double countLuckyTickets(Double n, Double m) {

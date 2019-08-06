@@ -41,12 +41,10 @@ public class Task4Arguments implements ITask4Arguments {
         this.stringArgs = stringArgs;
     }
 
-    @Override
     public String[] getArgs() {
         return stringArgs;
     }
 
-    @Override
     public boolean validate() {
 
         File file = new File(stringArgs[FILEPATH_INDEX]);
