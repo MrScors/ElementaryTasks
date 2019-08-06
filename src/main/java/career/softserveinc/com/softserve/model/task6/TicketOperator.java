@@ -32,8 +32,8 @@ class TicketOperator {
         int counter = 0;
         do {
             ticket = getNextTicket(ticket);
-            if (isMoscowLucky(ticket) || isPiterLucky(ticket) || isDniproLucky(ticket)) counter++;
-        } while (!getNextTicket(ticket).equals(end));
+            if (isMoscowLucky(ticket) || isPiterLucky(ticket)|| isDniproLucky(ticket)) counter++;
+        } while (ticket.compareTo(end) < 0);
         return counter;
     }
 
@@ -63,7 +63,7 @@ class TicketOperator {
         do {
             ticket = getNextTicket(ticket);
             if (isDniproLucky(ticket)) counter++;
-        } while (!getNextTicket(ticket).equals(end));
+        } while (ticket.compareTo(end) < 0);
         return counter;
     }
     private static boolean isMoscowLucky(Ticket t) {

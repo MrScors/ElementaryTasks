@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="702ad37f-65cb-4aeb-8459-8d3e5a6e3e15" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task4/FileManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/FileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/Task4Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/Task4Arguments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/Task4Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/Task4Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task6/Task6Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task6/Task6Arguments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task6/TicketOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task6/TicketOperator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task8/FibonacciManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task8/FibonacciManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task8/Task8Arguments.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task8/Task8Arguments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/view/ConsolePrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/view/ConsolePrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/arguments_input/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/arguments_input/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/Task4Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/Task4Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/Task4Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/Task4Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/Task6Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/Task6Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/TicketOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/TicketOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/FibonacciManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/FibonacciManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/Task8Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/Task8Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/view/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/view/ConsolePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task6/TicketOperatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task6/TicketOperatorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,21 +99,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="main.java.career.softserveinc.com.softserve.model.task4" />
       <recent name="main.java.career.softserveinc.com.softserve.model.task6" />
       <recent name="main.java.career.softserveinc.com.softserve.model.task3" />
       <recent name="main.java.career.softserveinc.com.softserve.model.task2" />
       <recent name="main.java.career.softserveinc.com.softserve.arguments_input" />
-      <recent name="main.java.career.softserveinc.com.softserve.model.task1" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="main.java.career.softserveinc.com.softserve.model.task3" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="career.softserveinc.com.softserve.model.task6" />
@@ -108,6 +121,12 @@
       <recent name="C:\MrScors\Programming\IdeaProjects\ElementaryTasks\src\test\java\model" />
       <recent name="C:\MrScors\Programming\IdeaProjects\ElementaryTasks\src\test\java" />
       <recent name="F:\ProgammingAndWeb\JavaApps\ElementaryTasks_Pavlov\src\career\softserveinc\com\softserve" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.java.career.softserveinc.com.softserve.model.task3" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -234,9 +253,7 @@
       <workItem from="1564750795161" duration="13179000" />
       <workItem from="1564826043163" duration="15411000" />
       <workItem from="1564898263964" duration="17917000" />
-      <workItem from="1565006340507" duration="6027000" />
-      <workItem from="1565029946795" duration="803000" />
-      <workItem from="1565088971544" duration="346000" />
+      <workItem from="1565006340507" duration="5475000" />
     </task>
     <task id="LOCAL-00001" summary="ver-2.0 (architecture improved)">
       <created>1563646487654</created>
@@ -280,14 +297,7 @@
       <option name="project" value="LOCAL" />
       <updated>1564494336242</updated>
     </task>
-    <task id="LOCAL-00007" summary="ver-5.1 (task 6  brute force + integral versions added and connected)">
-      <created>1565013413564</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1565013413564</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,8 +340,18 @@
     <MESSAGE value="ver-4.3 (tasks 8 and 4 were connected, task 6 was added and connected)" />
     <MESSAGE value="ver-4.7 (task7 added and connected)" />
     <MESSAGE value="ver-4.8 (task9 added and connected)" />
-    <MESSAGE value="ver-5.1 (task 6  brute force + integral versions added and connected)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ver-5.1 (task 6  brute force + integral versions added and connected)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver-4.8 (task9 added and connected)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/FibonacciManager.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

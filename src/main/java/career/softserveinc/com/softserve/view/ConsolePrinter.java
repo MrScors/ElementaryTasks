@@ -83,10 +83,11 @@ public class ConsolePrinter {
         System.out.println("You've chose task4");
     }
 
-    public static void askToWriteSomeArgumentsForTask4() {
-        System.out.println("Please, enter arguments to use in task4\n" +
-                "(must be 1 string in format \"<filepath> <stringToFind>\"\n" +
-                "or \"<filepath> <stringToFind> <newStringToReplacePreviousOne>\" <>)");
+    public static void askToChoseOptionForTask4() {
+        System.out.println("Please chose option of FileManager, enter 1 to find and count number of given by you\n" +
+                "or 2 to replace given by you string to another one\n" +
+                "Option1: Enter 2 strings in format \n\"<filepath>\n<stringToFind>\"\n" +
+                "Option2: Enter 3 strings in format \n\"<filepath>\n<stringToFind>\n<newStringToReplacePreviousOne>\"");
     }
 
     // task_6
@@ -121,7 +122,7 @@ public class ConsolePrinter {
     public static void askToWriteSomeArgumentsForTask8() {
         System.out.println("Please, enter arguments to use in task8\n" +
                 "(must be 1 string in format <borderValue1> <borderValue2> or <lengthValue>)" + "\n" +
-                "borderValue -> long type; lengthValue < 92;");
+                "borderValue -> long type; lengthValue < 19;");
     }
 
     // task_9

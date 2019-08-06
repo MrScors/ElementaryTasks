@@ -32,6 +32,9 @@ package main.java.career.softserveinc.com.softserve.model.task4;
 import java.io.File;
 
 public class Task4Arguments implements ITask4Arguments {
+
+    private static final int FILEPATH_INDEX = 0;
+
     private String[] stringArgs;
 
     Task4Arguments(String[] stringArgs) {
@@ -46,10 +49,10 @@ public class Task4Arguments implements ITask4Arguments {
     @Override
     public boolean validate() {
 
-        File file = new File(stringArgs[0]);
+        File file = new File(stringArgs[FILEPATH_INDEX]);
         if (!file.isFile()) return false;
 
-        return stringArgs.length == 2 || stringArgs.length == 3;
+        return ((stringArgs.length == 2 || stringArgs.length == 3) && !stringArgs[FILEPATH_INDEX].equals(""));
     }
 
 

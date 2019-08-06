@@ -29,6 +29,10 @@
 
 package main.java.career.softserveinc.com.softserve.model.task8;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 class FibonacciManager {
 
     static private int findLengthOfSubSequence(long start, long end) {
@@ -53,7 +57,6 @@ class FibonacciManager {
             start = end;
             end = temp;
         }
-
         int length = findLengthOfSubSequence(start, end);
         long[] subSequence = new long[length];
         int subSequenceCounter = 0;
@@ -71,19 +74,23 @@ class FibonacciManager {
     }
 
     static long[] findSubSequence(long length) {
-        long[] subSequence = new long[(int) length];
+        List<Long> subSequence = new ArrayList<>();
         int subSequenceCounter = 0;
         long prevElement = 0;
         long element = 1;
-        subSequence[subSequenceCounter++] = prevElement;
-        for (int i = 1; i < length - 1; i++) {
+        for (int i = 1; element/Math.pow(10, length-1) < 10; i++) {
             long temp = element;
             element += prevElement;
             prevElement = temp;
-            subSequence[subSequenceCounter++] = prevElement;
+            if(element/Math.pow(10, length-1) > 1 && element/Math.pow(10, length-1) < 10){
+                boolean add = subSequence.add(element);
+            }
         }
-        subSequence[subSequenceCounter] = element;
-        return subSequence;
+        long[] subSequenceAsArray = new long[subSequence.size()];
+        for (int i = 0; i < subSequence.size(); i++) {
+            subSequenceAsArray[i] = subSequence.get(i);
+        }
+        return subSequenceAsArray;
     }
 
 

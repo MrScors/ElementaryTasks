@@ -39,7 +39,7 @@ public class Task6Arguments implements ITask6Arguments {
     private static final int START_TICKET_INDEX = 2;
     private static final int END_TICKET_INDEX = 3;
 
-    private String filePath;
+    private String filePath = "";
     private int[] startTicketNumbers;
     private int[] endTicketNumbers;
     private int countOfNumbersInTickets;
@@ -49,33 +49,36 @@ public class Task6Arguments implements ITask6Arguments {
     }
 
     Task6Arguments(String[] stringArgs) {
-        filePath = stringArgs[FILEPATH_INDEX];
 
-        String[] startTicketNumbersAsStrings = stringArgs[START_TICKET_INDEX].split(",");
-        startTicketNumbers = new int[startTicketNumbersAsStrings.length];
+        if(stringArgs.length == 4){
+            filePath = stringArgs[FILEPATH_INDEX];
 
-        try {
-            for (int i = 0; i < startTicketNumbers.length; i++) {
-                startTicketNumbers[i] = Integer.parseInt(startTicketNumbersAsStrings[i]);
+            String[] startTicketNumbersAsStrings = stringArgs[START_TICKET_INDEX].split(",");
+            startTicketNumbers = new int[startTicketNumbersAsStrings.length];
+
+            try {
+                for (int i = 0; i < startTicketNumbers.length; i++) {
+                    startTicketNumbers[i] = Integer.parseInt(startTicketNumbersAsStrings[i]);
+                }
+            } catch (NumberFormatException e) {
+                Arrays.fill(startTicketNumbers, -1);
             }
-        } catch (NumberFormatException e) {
-            Arrays.fill(startTicketNumbers, -1);
-        }
 
-        String[] endTicketNumbersAsStrings = stringArgs[END_TICKET_INDEX].split(",");
-        endTicketNumbers = new int[endTicketNumbersAsStrings.length];
+            String[] endTicketNumbersAsStrings = stringArgs[END_TICKET_INDEX].split(",");
+            endTicketNumbers = new int[endTicketNumbersAsStrings.length];
 
-        try {
-            for (int i = 0; i < startTicketNumbers.length; i++) {
-                endTicketNumbers[i] = Integer.parseInt(endTicketNumbersAsStrings[i]);
+            try {
+                for (int i = 0; i < startTicketNumbers.length; i++) {
+                    endTicketNumbers[i] = Integer.parseInt(endTicketNumbersAsStrings[i]);
+                }
+            } catch (NumberFormatException e) {
+                Arrays.fill(endTicketNumbers, -1);
             }
-        } catch (NumberFormatException e) {
-            Arrays.fill(endTicketNumbers, -1);
-        }
-        try {
-            countOfNumbersInTickets = Integer.parseInt(stringArgs[COUNT_OF_NUMBERS_IN_TICKETS_INDEX]);
-        } catch (NumberFormatException e) {
-            countOfNumbersInTickets = -1;
+            try {
+                countOfNumbersInTickets = Integer.parseInt(stringArgs[COUNT_OF_NUMBERS_IN_TICKETS_INDEX]);
+            } catch (NumberFormatException e) {
+                countOfNumbersInTickets = -1;
+            }
         }
     }
 

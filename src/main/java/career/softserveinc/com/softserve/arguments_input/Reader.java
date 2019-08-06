@@ -60,8 +60,23 @@ public class Reader {
         return br.readLine();
     }
 
-    public static String readTask4Arguments(BufferedReader br) throws IOException {
-        return br.readLine();
+    public static String[] readTask4Arguments(BufferedReader br) throws IOException {
+        String option = br.readLine();
+        String[] args;
+        if(option.equals("1")) {
+            args = new String[2];
+            for (int i = 0; i < 2; i++) {
+                args[i] = br.readLine();
+            }
+        } else if(option.equals("2")){
+             args = new String[3];
+            for (int i = 0; i < 3; i++) {
+                args[i] = br.readLine();
+            }
+        } else {
+            args = new String[]{""};
+        }
+        return args;
     }
 
     public static String readTask6Arguments(BufferedReader br) throws IOException {
