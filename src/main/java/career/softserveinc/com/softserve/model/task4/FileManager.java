@@ -12,19 +12,13 @@ class FileManager {
     FileManager(String filePath) throws FileNotFoundException {
         this.filePath = filePath;
         this.fileReader = new BufferedReader(new FileReader(filePath));
-        this.fileWriter = new FileOutputStream(filePath);
+
     }
 
     FileManager(String filePath, BufferedReader fileReader) throws FileNotFoundException {
+        this.filePath = filePath;
         this.fileReader = fileReader;
-        this.fileWriter = new FileOutputStream(filePath);
     }
-
-    FileManager(BufferedReader fileReader, FileOutputStream fileWriter) throws FileNotFoundException {
-        this.fileReader = fileReader;
-        this.fileWriter = fileWriter;
-    }
-
 
     String readFile() throws IOException {
         StringBuilder sb = new StringBuilder();
@@ -36,7 +30,9 @@ class FileManager {
         return sb.toString().substring(0, sb.length()-1);
     }
 
-    //C:\MrScors\Args.txt test
+    //resources/testingSugar.txt
+    //ANONYMOUS CLASS (string to search)
+    //NOT_AN_ANONYMOUS CLASS (new string)
 
     int countNumberOfSubstrings(String wanted) throws IOException {
         int result = 0;
@@ -56,15 +52,18 @@ class FileManager {
     String changeSubstringsToAnotherInFile(String oldOne, String newOne) throws IOException {
         String str = readFile();
         str = str.replaceAll(oldOne, newOne);
-        str = str.replaceAll(oldOne.replaceAll(" ", "\n"),
-                newOne.replaceAll(" ", "\n"));
-        str = str.replaceAll(oldOne.replaceAll(" ", "\t"),
-                newOne.replaceAll(" ", "\t"));
+        if(oldOne.contains(" ")){
+            str = str.replaceAll(oldOne.replaceAll(" ", "\n"),
+                    newOne.replaceAll(" ", "\n"));
+            str = str.replaceAll(oldOne.replaceAll(" ", "\t"),
+                    newOne.replaceAll(" ", "\t"));
+        }
         writeToFile(str);
         return str;
     }
 
     private void writeToFile(String str) throws IOException {
+        fileWriter = new FileOutputStream(new File(filePath));
         fileWriter.write(str.getBytes());
         fileWriter.close();
     }

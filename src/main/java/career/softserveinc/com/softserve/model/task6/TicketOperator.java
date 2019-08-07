@@ -10,7 +10,7 @@ class TicketOperator {
         else return  countNumberOfAllLuckyTickets(start, end);
     }
 
-    private static Ticket getNextTicket(Ticket t) {
+    static Ticket getNextTicket(Ticket t) {
         int[] newTicketNumbers = t.getTicketNumbers();
         newTicketNumbers[newTicketNumbers.length - 1]++;
         for (int i = newTicketNumbers.length - 1; i > 0; i--) {

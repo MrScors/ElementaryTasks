@@ -33,35 +33,47 @@ import java.io.BufferedReader;
 import java.math.BigInteger;
 
 public class Task8Arguments implements ITask8Arguments {
-    private long[] longArgs;
+    private BigInteger[] bigIntegerArgs;
 
-    Task8Arguments(String[] stringArgs){
-        try{
-            longArgs = new long[stringArgs.length];
+    Task8Arguments(String[] stringArgs) {
+        try {
+            bigIntegerArgs = new BigInteger[stringArgs.length];
             for (int i = 0; i < stringArgs.length; i++) {
-                longArgs[i] = Long.parseLong(stringArgs[i]);
+                bigIntegerArgs[i] = new BigInteger(stringArgs[i]);
             }
-        }catch (NumberFormatException e){
-            longArgs = null;
-            longArgs = null;
+        } catch (NumberFormatException e) {
+            bigIntegerArgs = null;
+            bigIntegerArgs = null;
         }
     }
 
-    Task8Arguments(long[] longArgs) {
-        this.longArgs = longArgs;
+    Task8Arguments(BigInteger[] longArgs) {
+        this.bigIntegerArgs = longArgs;
     }
 
     @Override
-    public long[] getArgs() {
-        return longArgs;
+    public BigInteger[] getArgs() {
+        return bigIntegerArgs;
     }
 
     @Override
     public boolean validate() {
 
-        if(longArgs.length == 1 && longArgs[0] < 19) return true;
-        return longArgs.length == 2;
-
+        if (bigIntegerArgs.length == 1) {
+            if (bigIntegerArgs[0].compareTo(new BigInteger("2147483648")) < 0 &&
+                    bigIntegerArgs[0].intValue() > 0) {
+                try {
+                    BigInteger TEN_AS_BIG_INTEGER = new BigInteger("10");
+                    BigInteger test = TEN_AS_BIG_INTEGER.pow(bigIntegerArgs[0].intValue());
+                    return true;
+                } catch (java.lang.ArithmeticException e) {
+                    return false;
+                }
+            } else return false;
+        } else
+            return bigIntegerArgs.length == 2 &&
+                    bigIntegerArgs[0].intValue() > 0 &&
+                    bigIntegerArgs[1].intValue() > 0;
     }
 
 

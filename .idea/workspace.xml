@@ -2,67 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="702ad37f-65cb-4aeb-8459-8d3e5a6e3e15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_core_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/mockito-core-3.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task4/Task4ArgumentsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/testingSugar.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task6/Task6ArgumentsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task8/FibonacciManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task8/Task8ArgumentsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElementaryTasks_Pavlov.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ElementaryTasks_Pavlov.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/controller/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/controller/NumberOfTaskToRun.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/RunnableTasks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/Validatable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task1/ChessBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task1/Drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task1/ITask1Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task1/Task1Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task1/Task1Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task2/Envelope.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task2/ITask2Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task2/Task2Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task2/Task2Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task3/ITask3Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task3/Task3Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task3/Task3Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task3/Triangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/FileManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/ITask4Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/Task4Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task4/Task4Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task6/ITask6Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task6/Task6Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task6/Task6Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task6/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task6/TicketOperator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task7/ITask7Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task7/IntegerSequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task7/IntegerSequenceCreator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task7/Task7Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task7/Task7Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task8/FibonacciManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task8/ITask8Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task8/Task8Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task8/Task8Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task9/EffectiveMath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task9/ITask9Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task9/Task9Arguments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/model/task9/Task9Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ElementaryTasks_Pavlov/main/java/career/softserveinc/com/softserve/view/ConsolePrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/arguments_input/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/arguments_input/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/controller/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/Task4Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/Task4Arguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/Task4Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task4/Task4Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/CounterOfLuckyTickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/CounterOfLuckyTickets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/Task6Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/Task6Arguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task7/Task7Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task7/Task7Arguments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task7/Task7Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task7/Task7Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/Task6Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/Task6Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/TicketOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task6/TicketOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/FibonacciManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/FibonacciManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/ITask8Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/ITask8Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/Task8Arguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/Task8Arguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/Task8Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/model/task8/Task8Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/view/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/career/softserveinc/com/softserve/view/ConsolePrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task4/FileManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task4/FileManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task4/Task4ArgumentsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task6/TicketOperatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/career/softserveinc/com/softserve/model/task6/TicketOperatorTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,17 +106,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="main.java.career.softserveinc.com.softserve.model.task4" />
+      <recent name="main.java.career.softserveinc.com.softserve.model.task8" />
       <recent name="main.java.career.softserveinc.com.softserve.model.task6" />
+      <recent name="main.java.career.softserveinc.com.softserve.model.task4" />
       <recent name="main.java.career.softserveinc.com.softserve.model.task3" />
       <recent name="main.java.career.softserveinc.com.softserve.model.task2" />
-      <recent name="main.java.career.softserveinc.com.softserve.arguments_input" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="main.java.career.softserveinc.com.softserve.model.task3" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="main.java.career.softserveinc.com.softserve.model.task4" />
@@ -172,6 +125,12 @@
       <recent name="C:\MrScors\Programming\IdeaProjects\ElementaryTasks\src\test\java" />
       <recent name="F:\ProgammingAndWeb\JavaApps\ElementaryTasks_Pavlov\src\career\softserveinc\com\softserve" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.java.career.softserveinc.com.softserve.model.task3" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -185,10 +144,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileManagerTest.changeSubstringsToAnotherInFileParametrizedTest">
+  <component name="RunManager" selected="JUnit.Task8ArgumentsTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.career.softserveinc.com.softserve.controller.Main" />
       <module name="ElementaryTasks_Pavlov" />
+      <option name="PROGRAM_PARAMETERS" value="F:\MoscowTickets.txt 6 0,0,0,0,0,0 9,9,9,9,9,9" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.java.career.softserveinc.com.softserve.controller.*" />
@@ -199,84 +159,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChessBoardTest.createBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FibonacciManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ElementaryTasks_Pavlov" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.career.softserveinc.com.softserve.model.task1.*" />
+          <option name="PATTERN" value="main.java.career.softserveinc.com.softserve.model.task8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main.java.career.softserveinc.com.softserve.model.task1" />
-      <option name="MAIN_CLASS_NAME" value="main.java.career.softserveinc.com.softserve.model.task1.ChessBoardTest" />
-      <option name="METHOD_NAME" value="createBoardTest" />
+      <option name="PACKAGE_NAME" value="main.java.career.softserveinc.com.softserve.model.task8" />
+      <option name="MAIN_CLASS_NAME" value="main.java.career.softserveinc.com.softserve.model.task8.FibonacciManagerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciManagerTest.getSubsequenceParametrizedTestWithGivenLengthOfNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ElementaryTasks_Pavlov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.career.softserveinc.com.softserve.model.task8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.career.softserveinc.com.softserve.model.task8" />
+      <option name="MAIN_CLASS_NAME" value="main.java.career.softserveinc.com.softserve.model.task8.FibonacciManagerTest" />
+      <option name="METHOD_NAME" value="getSubsequenceParametrizedTestWithGivenLengthOfNumbers(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChessBoardTest.createBoardTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FibonacciManagerTest.getSubsequenceWithGivenBordersParametrizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ElementaryTasks_Pavlov" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.career.softserveinc.com.softserve.model.task1.*" />
+          <option name="PATTERN" value="main.java.career.softserveinc.com.softserve.model.task8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main.java.career.softserveinc.com.softserve.model.task1" />
-      <option name="MAIN_CLASS_NAME" value="main.java.career.softserveinc.com.softserve.model.task1.ChessBoardTest" />
-      <option name="METHOD_NAME" value="createBoardTest2" />
+      <option name="PACKAGE_NAME" value="main.java.career.softserveinc.com.softserve.model.task8" />
+      <option name="MAIN_CLASS_NAME" value="main.java.career.softserveinc.com.softserve.model.task8.FibonacciManagerTest" />
+      <option name="METHOD_NAME" value="getSubsequenceWithGivenBordersParametrizedTest(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChessBoardTest.createBoardTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task8ArgumentsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ElementaryTasks_Pavlov" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.career.softserveinc.com.softserve.model.task1.*" />
+          <option name="PATTERN" value="main.java.career.softserveinc.com.softserve.model.task8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="main.java.career.softserveinc.com.softserve.model.task1" />
-      <option name="MAIN_CLASS_NAME" value="main.java.career.softserveinc.com.softserve.model.task1.ChessBoardTest" />
-      <option name="METHOD_NAME" value="createBoardTest3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileManagerTest.changeSubstringsToAnotherInFileParametrizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ElementaryTasks_Pavlov" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.career.softserveinc.com.softserve.model.task4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="main.java.career.softserveinc.com.softserve.model.task4" />
-      <option name="MAIN_CLASS_NAME" value="main.java.career.softserveinc.com.softserve.model.task4.FileManagerTest" />
-      <option name="METHOD_NAME" value="changeSubstringsToAnotherInFileParametrizedTest(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="main.java.career.softserveinc.com.softserve.model.task8" />
+      <option name="MAIN_CLASS_NAME" value="main.java.career.softserveinc.com.softserve.model.task8.Task8ArgumentsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.ChessBoardTest.createBoardTest" />
-      <item itemvalue="JUnit.ChessBoardTest.createBoardTest2" />
-      <item itemvalue="JUnit.ChessBoardTest.createBoardTest3" />
-      <item itemvalue="JUnit.FileManagerTest.changeSubstringsToAnotherInFileParametrizedTest" />
+      <item itemvalue="JUnit.FibonacciManagerTest.getSubsequenceWithGivenBordersParametrizedTest" />
+      <item itemvalue="JUnit.FibonacciManagerTest.getSubsequenceParametrizedTestWithGivenLengthOfNumbers" />
+      <item itemvalue="JUnit.FibonacciManagerTest" />
+      <item itemvalue="JUnit.Task8ArgumentsTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileManagerTest.changeSubstringsToAnotherInFileParametrizedTest" />
+        <item itemvalue="JUnit.Task8ArgumentsTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ChessBoardTest.createBoardTest3" />
-        <item itemvalue="JUnit.ChessBoardTest.createBoardTest2" />
-        <item itemvalue="JUnit.ChessBoardTest.createBoardTest" />
+        <item itemvalue="JUnit.FibonacciManagerTest.getSubsequenceParametrizedTestWithGivenLengthOfNumbers" />
+        <item itemvalue="JUnit.FibonacciManagerTest" />
+        <item itemvalue="JUnit.FibonacciManagerTest.getSubsequenceWithGivenBordersParametrizedTest" />
       </list>
     </recent_temporary>
   </component>
@@ -298,6 +256,7 @@
       <workItem from="1564826043163" duration="15411000" />
       <workItem from="1564898263964" duration="17917000" />
       <workItem from="1565006340507" duration="5475000" />
+      <workItem from="1565159914886" duration="18024000" />
     </task>
     <task id="LOCAL-00001" summary="ver-2.0 (architecture improved)">
       <created>1563646487654</created>
@@ -341,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564494336242</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ver-5.5 (task4 improved, task tests for task4 added)">
+      <created>1565100636169</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1565100636169</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +351,8 @@
     <MESSAGE value="ver-4.3 (tasks 8 and 4 were connected, task 6 was added and connected)" />
     <MESSAGE value="ver-4.7 (task7 added and connected)" />
     <MESSAGE value="ver-4.8 (task9 added and connected)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ver-4.8 (task9 added and connected)" />
+    <MESSAGE value="ver-5.5 (task4 improved, task tests for task4 added)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver-5.5 (task4 improved, task tests for task4 added)" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

@@ -6,6 +6,7 @@ import main.java.career.softserveinc.com.softserve.arguments_input.Reader;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.math.BigInteger;
 import java.util.Arrays;
 
 public class Task8Runner implements RunnableTasks {
@@ -17,7 +18,7 @@ public class Task8Runner implements RunnableTasks {
     }
 
     @Override
-    public void run(BufferedReader br) throws IOException {
+    public void run(BufferedReader br) throws IOException{
         Task8Arguments validArguments;
         ConsolePrinter.tellYouAboutTask8();
         ConsolePrinter.askWhetherPassReceivedArguments();
@@ -34,15 +35,20 @@ public class Task8Runner implements RunnableTasks {
         }
     }
 
-    private static StringBuilder invokeTask8(ITask8Arguments arguments) {
+    private static StringBuilder invokeTask8(ITask8Arguments arguments){
         StringBuilder sb = new StringBuilder();
         if (arguments.getArgs().length == 2) {
-            sb.append("SubSequence between given borders is: ");
-            sb.append(Arrays.toString(FibonacciManager.findSubSequence
-                    (arguments.getArgs()[0], arguments.getArgs()[1])));
+            sb.append("SubSequence between given borders is:\n");
+            for (BigInteger bi: FibonacciManager.findSubSequence(arguments.getArgs()[0], arguments.getArgs()[1])) {
+                sb.append(bi.toString());
+                sb.append("\n");
+            }
         } else {
-            sb.append("SubSequence with given length: ");
-            sb.append(Arrays.toString(FibonacciManager.findSubSequence(arguments.getArgs()[0])));
+            sb.append("SubSequence of Fibonacci Numbers with given length:\n");
+            for (BigInteger bi: FibonacciManager.findSubSequence(arguments.getArgs()[0].intValue())) {
+                sb.append(bi.toString());
+                sb.append("\n");
+            }
         }
         return sb;
     }
@@ -59,8 +65,8 @@ public class Task8Runner implements RunnableTasks {
         return validArguments;
     }
 
-    private static long[] readConsoleArguments(BufferedReader br) throws NumberFormatException{
-        long[] consoleArguments;
+    private static BigInteger[] readConsoleArguments(BufferedReader br) throws NumberFormatException{
+        BigInteger[] consoleArguments;
         do {
             try {
                 consoleArguments = Reader.readTask8Arguments(br);

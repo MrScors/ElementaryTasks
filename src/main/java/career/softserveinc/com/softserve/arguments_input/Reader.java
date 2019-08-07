@@ -31,6 +31,7 @@ package main.java.career.softserveinc.com.softserve.arguments_input;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.math.BigInteger;
 
 public class Reader {
 
@@ -88,12 +89,12 @@ public class Reader {
         return Integer.parseInt(argumentAsString);
     }
 
-    public static long[] readTask8Arguments(BufferedReader br) throws NumberFormatException, IOException {
+    public static BigInteger[] readTask8Arguments(BufferedReader br) throws NumberFormatException, IOException {
         String arguments = br.readLine();
         String[] argumentsAsArray = arguments.split(" ");
-        long[] argumentsAsLongArray = new long[argumentsAsArray.length];
+        BigInteger[] argumentsAsLongArray = new BigInteger[argumentsAsArray.length];
         for (int i = 0; i < argumentsAsArray.length; i++) {
-            argumentsAsLongArray[i] = Long.parseLong(argumentsAsArray[i]);
+            argumentsAsLongArray[i] = new BigInteger(argumentsAsArray[i]);
         }
         return argumentsAsLongArray;
     }

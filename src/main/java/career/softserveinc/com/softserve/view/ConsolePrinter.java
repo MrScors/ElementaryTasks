@@ -97,8 +97,10 @@ public class ConsolePrinter {
     }
 
     public static void askToWriteSomeArgumentsForTask6() {
-        System.out.println("Please, enter arguments to use in task2\n" +
-                "(must be 1 string in format <validFilepath>)");
+        System.out.println("Please, enter arguments to use in task6\n" +
+                "must be 1 string in format:\n" +
+                "<validFilepath> <countOfNumbersInEachTicket> <numbersOfFirstTicket> <numbersOfLastTicket>\n" +
+                "numbersOfFirstTickets must be separated by comma \',\'");
     }
 
     // task_7

@@ -1,8 +1,8 @@
 package main.java.career.softserveinc.com.softserve.model.task8;
 
-import java.io.BufferedReader;
+import java.math.BigInteger;
 
 public interface ITask8Arguments {
-    long[] getArgs();
+    BigInteger[] getArgs();
     boolean validate();
 }

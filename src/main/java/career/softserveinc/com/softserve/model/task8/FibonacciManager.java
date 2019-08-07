@@ -29,70 +29,42 @@
 
 package main.java.career.softserveinc.com.softserve.model.task8;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 class FibonacciManager {
 
-    static private int findLengthOfSubSequence(long start, long end) {
-        int length = 0;
-        long i = 1;
-        long prevI = 0;
-        while (i < end) {
-            if (i >= start) {
-                length++;
-            }
-            long temp = i;
-            i += prevI;
-            prevI = temp;
-        }
-        return length;
-    }
-
-    static long[] findSubSequence(long start, long end) {
-
-        if (start > end) { // swap instead of incorrect work
-            long temp = start;
+    static List<BigInteger> findSubSequence(BigInteger start, BigInteger end) {
+        if(start.compareTo(end)>0){
+            BigInteger temp = start;
             start = end;
             end = temp;
         }
-        int length = findLengthOfSubSequence(start, end);
-        long[] subSequence = new long[length];
-        int subSequenceCounter = 0;
-        long i = 1;
-        long prevI = 0;
-        while (i < end) {
-            if (i >= start) {
-                subSequence[subSequenceCounter++] = i;
+        return getBigIntegersInGivenBorders(start, end);
+    }
+
+    static List<BigInteger> findSubSequence(int length) throws java.lang.ArithmeticException {
+        final BigInteger TEN_AS_BIG_INTEGER = new BigInteger("10");
+        BigInteger max = TEN_AS_BIG_INTEGER.pow(length);
+        BigInteger min = TEN_AS_BIG_INTEGER.pow(length - 1);
+        return getBigIntegersInGivenBorders(min, max);
+    }
+
+    private static List<BigInteger> getBigIntegersInGivenBorders(BigInteger start, BigInteger end) {
+        BigInteger prevElement = new BigInteger("0");
+        BigInteger element = new BigInteger("1");
+        List<BigInteger> subSequence = new ArrayList<>();
+        for (int i = 1; element.compareTo(end) < 0; i++) {
+            BigInteger temp = element;
+            element = element.add(prevElement);
+            prevElement = temp;
+            if (element.compareTo(start) > 0 && element.compareTo(end) < 0) {
+                subSequence.add(element);
             }
-            long temp = i;
-            i += prevI;
-            prevI = temp;
         }
         return subSequence;
     }
-
-    static long[] findSubSequence(long length) {
-        List<Long> subSequence = new ArrayList<>();
-        int subSequenceCounter = 0;
-        long prevElement = 0;
-        long element = 1;
-        for (int i = 1; element/Math.pow(10, length-1) < 10; i++) {
-            long temp = element;
-            element += prevElement;
-            prevElement = temp;
-            if(element/Math.pow(10, length-1) > 1 && element/Math.pow(10, length-1) < 10){
-                boolean add = subSequence.add(element);
-            }
-        }
-        long[] subSequenceAsArray = new long[subSequence.size()];
-        for (int i = 0; i < subSequence.size(); i++) {
-            subSequenceAsArray[i] = subSequence.get(i);
-        }
-        return subSequenceAsArray;
-    }
-
 
 
 }

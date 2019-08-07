@@ -47,7 +47,7 @@ public class Task6Runner implements RunnableTasks {
     private static Task6Arguments readValidConsoleArguments(BufferedReader br) throws IOException {
         Task6Arguments validArguments;
         do {
-            ConsolePrinter.askToWriteSomeArgumentsForTask7();
+            ConsolePrinter.askToWriteSomeArgumentsForTask6();
             validArguments = new Task6Arguments(Reader.readTask6Arguments(br));
             if (!validArguments.validate()) {
                 ConsolePrinter.writeInvalidArgsErrorMessage();
@@ -57,8 +57,8 @@ public class Task6Runner implements RunnableTasks {
     }
 
     private static String readWayToCountTickets(String filePath) throws IOException {
-        BufferedReader file = new BufferedReader(new FileReader(filePath));
-        return file.readLine();
+        BufferedReader fileReader = new BufferedReader(new FileReader(filePath));
+        return fileReader.readLine();
     }
 
 }

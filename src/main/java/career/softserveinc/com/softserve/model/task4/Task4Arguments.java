@@ -34,6 +34,7 @@ import java.io.File;
 public class Task4Arguments implements ITask4Arguments {
 
     private static final int FILEPATH_INDEX = 0;
+    private static final int OLD_STRING_INDEX = 1;
 
     private String[] stringArgs;
 
@@ -47,10 +48,9 @@ public class Task4Arguments implements ITask4Arguments {
 
     public boolean validate() {
 
-        File file = new File(stringArgs[FILEPATH_INDEX]);
-        if (!file.isFile()) return false;
-
-        return ((stringArgs.length == 2 || stringArgs.length == 3) && !stringArgs[FILEPATH_INDEX].equals(""));
+        return ((stringArgs.length == 2 || stringArgs.length == 3)
+                && new File(stringArgs[FILEPATH_INDEX]).isFile()
+                && !stringArgs[OLD_STRING_INDEX].equals(""));
     }
 
 
